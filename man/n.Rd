@@ -5,10 +5,10 @@
 n(df)
 }
 \arguments{
-  \item{df}{A data.frame object \{code df}}
+  \item{df}{A data.frame object \code{df}}
 }
 \value{
-output A single column numbered list of data.frame names
+A single column numbered list of data.frame names
 }
 \description{
 Given data.frame df, return the `names` of that data.frame
