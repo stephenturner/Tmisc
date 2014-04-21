@@ -1,4 +1,7 @@
 export("%nin%")
+export(addRawFC)
 export(datename)
+export(mergett)
 export(n)
 export(propmiss)
+export(rownames_to_symprobe)
