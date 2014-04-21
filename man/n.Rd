@@ -1,11 +1,11 @@
 \name{n}
 \alias{n}
-\title{Returns names(df) in single column, numbered matrix format.}
+\title{Numbered list of column names}
 \usage{
 n(df)
 }
 \arguments{
-  \item{df}{A data.frame object \code{df}}
+  \item{df}{A data.frame object}
 }
 \value{
 A single column numbered list of data.frame names

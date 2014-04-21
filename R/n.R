@@ -1,9 +1,9 @@
-#' Returns names(df) in single column, numbered matrix format.
+#' Numbered list of column names
 #' 
 #' Given data.frame df, return the `names` of that data.frame
 #' in a "long" one-column numbered format.
 #' 
-#' @param df A data.frame object \code{df}
+#' @param df A data.frame object
 #' 
 #' @return A single column numbered list of data.frame names
 #' 
