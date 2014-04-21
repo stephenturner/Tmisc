@@ -1,3 +1,4 @@
 export("%nin%")
 export(datename)
 export(n)
+export(propmiss)
