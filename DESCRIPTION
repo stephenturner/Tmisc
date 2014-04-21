@@ -1,8 +1,10 @@
 Package: Tmisc
-Title: What the package does (short line)
-Version: 0.1
-Authors@R: "First Last <first.last@example.com> [aut, cre]"
-Description: What the package does (paragraph)
+Title: Tmisc: Turner miscellaneous
+Version: 0.1.0
+Authors: "Stephen Turner <vustephenAAAAAAA@gmail.com> [aut, cre]"
+Description: Some generic convenience functions.
 Depends: R (>= 3.0.2)
-License: What license is it under?
+Suggests: knitr, BiocStyle
+License: GPL-3
 LazyData: true
+VignetteBuilder: knitr
