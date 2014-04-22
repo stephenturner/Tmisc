@@ -10,9 +10,6 @@
 #' @keywords keywords
 #' 
 #' @export
-#' 
-#' @examples
-#' propmiss(iris)
 
 propmiss <- function(df) {
     m <- sapply(df, function(x) {

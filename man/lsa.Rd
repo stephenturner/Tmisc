@@ -11,8 +11,5 @@ A data frame with all objects and their class.
 List all the objects and their classes in the global
 environment.
 }
-\examples{
-# lsa()
-}
 \keyword{keywords}
 

@@ -9,8 +9,5 @@
 #' @keywords keywords
 #' 
 #' @export
-#' 
-#' @examples
-#' datename("results.csv")
 
 datename <- function(filename="filename") paste0(Sys.Date(), "-", filename)

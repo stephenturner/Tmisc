@@ -15,8 +15,5 @@ to filename.
 Returns string with today's date in YYYY-MM-DD- format
 concatenated to filename.
 }
-\examples{
-datename("results.csv")
-}
 \keyword{keywords}
 

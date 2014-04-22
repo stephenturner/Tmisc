@@ -14,8 +14,5 @@ A data.frame with missingness stats
 Returns the number of missing values, total length, and
 proportion missing values for each variable in a data.frame
 }
-\examples{
-propmiss(iris)
-}
 \keyword{keywords}
 

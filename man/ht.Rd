@@ -16,8 +16,5 @@ The first and last few lines of a data frame or matrix.
 Prints the \code{head} and \code{tail} of a data.frame or
 matrix.
 }
-\examples{
-ht(iris)
-}
 \keyword{keywords}
 

@@ -10,9 +10,6 @@
 #' @keywords keywords
 #' 
 #' @export
-#' 
-#' @examples
-#' n(iris)
 
 n <- function(df) {
     matrix(names(df))
