@@ -2,11 +2,10 @@
 \alias{lsp}
 \title{List objects in package}
 \usage{
-lsp(packagename, all.names = FALSE, pattern)
+lsp(package, all.names = FALSE, pattern)
 }
 \arguments{
-  \item{packagename}{The name of the package you're
-  examining.}
+  \item{package}{The name of the package you're examining.}
 
   \item{all.names}{a logical value. If TRUE, all object
   names are returned. If FALSE, names which begin with a .
