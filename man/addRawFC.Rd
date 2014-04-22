@@ -15,11 +15,11 @@ Takes a limma topTable as input, and adds the absolute
 value of the log2 FC, and the raw FC (2^logFC).
 }
 \examples{
-fit <- lmFit(eset,design)
-fit <- contrasts.fit(fit, contrast.matrix)
-fit <- eBayes(fit)
-tt <- topTable(fit, coef="mycontrast", number=nrow(fit))
-tt <- addRawFC(tt)
+# fit <- lmFit(eset,design)
+# fit <- contrasts.fit(fit, contrast.matrix)
+# fit <- eBayes(fit)
+# tt <- topTable(fit, coef="mycontrast", number=nrow(fit))
+# tt <- addRawFC(tt)
 }
 \keyword{keywords}
 

@@ -14,14 +14,15 @@
 #' @export
 #' 
 #' @examples
-#' fit <- lmFit(eset,design)
-#' fit <- contrasts.fit(fit, contrast.matrix)
-#' fit <- eBayes(fit)
-#' tt <- topTable(fit, coef="mycontrast", number=nrow(fit))
-#' tt <- addRawFC(tt)
-#' tt <- mergett(tt, eset)
+#' # fit <- lmFit(eset,design)
+#' # fit <- contrasts.fit(fit, contrast.matrix)
+#' # fit <- eBayes(fit)
+#' # tt <- topTable(fit, coef="mycontrast", number=nrow(fit))
+#' # tt <- addRawFC(tt)
+#' # tt <- mergett(tt, eset)
 
 mergett <- function(tt, eset) {
+    require(Biobase)
     if (class(tt)!="data.frame") stop("tt should be a data.frame")
     if (class(eset)!="ExpressionSet") stop("eset should be an ExpressionSet")
     exprset <- data.frame(exprs(eset))

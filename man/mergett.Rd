@@ -20,12 +20,12 @@ from the ExpressionSet. Note: run \code{addRawFC(tt)}
 before merging with ExpressionSet values.
 }
 \examples{
-fit <- lmFit(eset,design)
-fit <- contrasts.fit(fit, contrast.matrix)
-fit <- eBayes(fit)
-tt <- topTable(fit, coef="mycontrast", number=nrow(fit))
-tt <- addRawFC(tt)
-tt <- mergett(tt, eset)
+# fit <- lmFit(eset,design)
+# fit <- contrasts.fit(fit, contrast.matrix)
+# fit <- eBayes(fit)
+# tt <- topTable(fit, coef="mycontrast", number=nrow(fit))
+# tt <- addRawFC(tt)
+# tt <- mergett(tt, eset)
 }
 \keyword{keywords}
 

@@ -1,0 +1,27 @@
+\name{lsp}
+\alias{lsp}
+\title{List objects in package}
+\usage{
+lsp(packagename, all.names = FALSE, pattern)
+}
+\arguments{
+  \item{packagename}{The name of the package you're
+  examining.}
+
+  \item{all.names}{a logical value. If TRUE, all object
+  names are returned. If FALSE, names which begin with a .
+  are omitted.}
+
+  \item{pattern}{an optional regular expression. Only names
+  matching pattern are returned. glob2rx can be used to
+  convert wildcard patterns to regular expressions.}
+}
+\value{
+A character vector of all the objects in the specified
+package.
+}
+\description{
+List all the objects in a package. Orig Karthik Ram.
+}
+\keyword{keywords}
+

@@ -23,7 +23,7 @@ the probe ID in case you have multiple symbols with the
 same probeID.
 }
 \examples{
-rownames_to_symprobe(esprs(eset), topTable(fit, number=nrow(fit)))
+# rownames_to_symprobe(esprs(eset), topTable(fit, number=nrow(fit)))
 }
 \keyword{keywords}
 

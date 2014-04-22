@@ -17,7 +17,8 @@
 #' @export
 #' 
 #' @examples
-#' rownames_to_symprobe(esprs(eset), topTable(fit, number=nrow(fit)))
+#' # rownames_to_symprobe(esprs(eset), topTable(fit, number=nrow(fit)))
+
 rownames_to_symprobe <- function (exprset, tt) {
     if(class(tt)!="data.frame") stop("tt isn't a data frame")
     if(class(exprset)!="matrix") stop("exprset isn't a matrix")

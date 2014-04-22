@@ -11,16 +11,17 @@
 #' @export
 #' 
 #' @examples
-#' fit <- lmFit(eset,design)
-#' fit <- contrasts.fit(fit, contrast.matrix)
-#' fit <- eBayes(fit)
-#' tt <- topTable(fit, coef="mycontrast", number=nrow(fit))
-#' tt <- addRawFC(tt)
+#' # fit <- lmFit(eset,design)
+#' # fit <- contrasts.fit(fit, contrast.matrix)
+#' # fit <- eBayes(fit)
+#' # tt <- topTable(fit, coef="mycontrast", number=nrow(fit))
+#' # tt <- addRawFC(tt)
  
 addRawFC <- function(tt) {
     if (class(tt)!="data.frame") stop("Doesn't look like a data.frame")
     if (!all(c("logFC", "AveExpr", "t", "P.Value", "adj.P.Val", "B") == names(tt)[(ncol(tt)-5):ncol(tt)])) stop("Doesn't look like a topTable")
     tt <- tt[order(tt$P.Value), ]
+    AveExpr=P.Value=adj.P.Val=NULL
     ttmeta <- tt[ ,1:(ncol(tt)-6)]
     logFC <- tt$logFC
     absLogFC <- abs(logFC)
