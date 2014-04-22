@@ -5,7 +5,7 @@ Author: Stephen Turner <vustephenAAAAAAA@gmail.com>
 Maintainer: Stephen Turner <vustephenAAAAAAA@gmail.com>
 Description: Some generic convenience functions.
 Depends:
-    R (>= 3.0.2)
+    R (>= 3.0.0)
 Suggests:
     knitr, Biobase
 License: GPL-3 + file LICENSE
