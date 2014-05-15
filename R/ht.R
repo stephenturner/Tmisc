@@ -10,6 +10,9 @@
 #' @keywords keywords
 #' 
 #' @export
+#' 
+#' @examples
+#' ht(iris)
 
 ht <- function(d, ...) {
     if(class(d)=="matrix"|class(d)=="data.frame") {

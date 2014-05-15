@@ -9,6 +9,9 @@
 #' @keywords keywords
 #'   
 #' @export
+#' 
+#' @examples
+#' unrowname(mtcars)
 
 unrowname <- function(x) {
     rownames(x) <- NULL

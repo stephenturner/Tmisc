@@ -11,6 +11,9 @@
 #' @keywords keywords
 #' 
 #' @export
+#' 
+#' @examples
+#' lsp(stats)
 
 lsp <-function(package, all.names = FALSE, pattern) {
     package <- deparse(substitute(package))

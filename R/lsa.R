@@ -7,6 +7,9 @@
 #' @keywords keywords
 #' 
 #' @export
+#' 
+#' @examples
+#' # lsa()
 
 lsa <- function() {
     obj_type <- function(x) class(get(x, envir = .GlobalEnv)) # define environment

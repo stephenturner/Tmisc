@@ -9,5 +9,8 @@
 #' @keywords keywords
 #' 
 #' @export
+#' 
+#' @examples
+#' datename("myfile.png")
 
 datename <- function(filename="filename") paste0(Sys.Date(), "-", filename)
