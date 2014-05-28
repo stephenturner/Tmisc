@@ -19,15 +19,15 @@
 
 read.gist <- function(gistid, ...) {
     
-    require(httr)
-    stopifnot(length(id)==1, is.character(id))
+    # Some minimal error checking.
+    stopifnot(length(gistid)==1, is.character(gistid))
     
     # Use the github api to retrieve the raw URL
     ## Get the API url
-    url <- sprintf("https://api.github.com/gists/%s", id)
+    url <- sprintf("https://api.github.com/gists/%s", gistid)
     req <- GET(url)
     stop_for_status(req)
-    text <- content(req, "text")
+    text <- httr::content(req, as="text")
     ## Yuck, parse the JSON with a regex.
     url_pos <- regexec('"raw_url": ?"(.*?)"', text)
     matches <- regmatches(text, url_pos)[[1]]
@@ -38,7 +38,7 @@ read.gist <- function(gistid, ...) {
     # read data from the raw url
     req <- GET(rawurl)
     stop_for_status(req)
-    handle <- textConnection(content(req, as = 'text'))
+    handle <- textConnection(httr::content(req, as="text"))
     on.exit(close(handle))
     read.table(handle, ...)
 }
