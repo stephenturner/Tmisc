@@ -20,6 +20,10 @@ lsa(pos = 1, pattern, order.by = "Size", decreasing = TRUE, head = TRUE,
 
 \item{n}{numeric. Number of objects to display is head is TRUE}
 }
+\value{
+A data.frame with type, size in bytes, human-readable size, rows, and
+  columns of every object in the environment.
+}
 \description{
 Improved list of objects.  Sorts by size by default.  This was shamelessly
 stolen from \url{http://stackoverflow.com/q/1358003/654296}

@@ -2,11 +2,12 @@
 #' 
 #' Strip rownames from an object (stolen from plyr).
 #' 
+#' @author Hadley Wickham
+#' @keywords keywords
+#' 
 #' @param x data frame
 #'   
-#' @return Character vector of the gene symbol with the probe ID
-#'   
-#' @keywords keywords
+#' @return A data frame with rownames removed
 #'   
 #' @export
 #' 

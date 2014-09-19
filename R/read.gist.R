@@ -5,17 +5,20 @@
 #' ID. E.g., if url is \url{https://gist.github.com/user/abc123}, the ID is
 #' abc123.
 #' 
+#' @author Hadley Wickham, Stephen Turner
+#' @keywords keywords
+#' 
 #' @param gistid A GitHub gist ID.
 #' @param ... Other arguments passed to \code{read.table()}
 #'   
 #' @return A data frame with the data you read in from the github gist.
-#'   
-#' @keywords keywords
-#'   
+#' 
 #' @export
 #' 
 #' @examples
-#' # read.gist("6fa823bb2de7e541ad54", header=TRUE)
+#' \dontrun{
+#' read.gist("6fa823bb2de7e541ad54", header=TRUE)
+#' }
 
 read.gist <- function(gistid, ...) {
     

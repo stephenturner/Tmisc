@@ -4,11 +4,12 @@
 #' participants were able to successfully download and install R and Rstudio
 #' before coming to the course.
 #' 
+#' @author Stephen Turner
+#' @keywords keywords
+#' 
 #' @param x Keep \code{NULL} for now.
 #'   
 #' @return A registration link
-#'   
-#' @keywords internal
 #'   
 #' @export
 #' 
@@ -16,6 +17,6 @@
 #' registration()
 
 registration <- function(x=NULL) {
-    message("To continue registration, please take the survey at:")
-    message("http://bit.ly/intro-r-lifesci-survey")
+    message("Please visit the following link to register:")
+    message("http://stephenturner.us")
 }

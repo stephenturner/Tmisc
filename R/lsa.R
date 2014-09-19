@@ -14,6 +14,9 @@
 #' @param head logical. Use head on the output?
 #' @param n numeric. Number of objects to display is head is TRUE
 #'   
+#' @return A data.frame with type, size in bytes, human-readable size, rows, and
+#'   columns of every object in the environment.
+#'   
 #' @export
 #' 
 #' @examples

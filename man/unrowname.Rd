@@ -9,13 +9,16 @@ unrowname(x)
 \item{x}{data frame}
 }
 \value{
-Character vector of the gene symbol with the probe ID
+A data frame with rownames removed
 }
 \description{
 Strip rownames from an object (stolen from plyr).
 }
 \examples{
 unrowname(mtcars)
+}
+\author{
+Hadley Wickham
 }
 \keyword{keywords}
 

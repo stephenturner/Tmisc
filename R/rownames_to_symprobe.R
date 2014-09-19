@@ -7,17 +7,20 @@
 #' heatmap contains the gene names concatenated to the probe ID in case you have
 #' multiple symbols with the same probeID.
 #' 
+#' @author Stephen Turner
+#' @keywords keywords
+#' 
 #' @param exprset The output of \code{exprs(eset)}
 #' @param tt A topTable object
 #'   
 #' @return Character vector of the gene symbol with the probe ID
 #'   
-#' @keywords keywords
-#'   
 #' @export
 #' 
 #' @examples
-#' # rownames_to_symprobe(esprs(eset), topTable(fit, number=nrow(fit)))
+#' \dontrun{
+#' rownames_to_symprobe(esprs(eset), topTable(fit, number=nrow(fit)))
+#' }
 
 rownames_to_symprobe <- function (exprset, tt) {
     if(class(tt)!="data.frame") stop("tt isn't a data frame")

@@ -3,11 +3,12 @@
 #' Returns the number of missing values, total length, and proportion
 #' missing values for each variable in a data.frame
 #' 
+#' @author Stephen Turner
+#' @keywords keywords
+#' 
 #' @param df A data.frame object
 #' 
 #' @return A data.frame with missingness stats
-#' 
-#' @keywords keywords
 #' 
 #' @export
 #' 

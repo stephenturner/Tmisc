@@ -19,5 +19,8 @@ before coming to the course.
 \examples{
 registration()
 }
-\keyword{internal}
+\author{
+Stephen Turner
+}
+\keyword{keywords}
 

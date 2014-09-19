@@ -11,7 +11,8 @@ mergett(tt, eset)
 \item{eset}{An ExpressionSet object from which tt derives}
 }
 \value{
-An expanded topTable with gene expression values merged in, sorted by p-value.
+An expanded topTable with gene expression values merged in, sorted by
+  p-value.
 }
 \description{
 Merges topTable output with normalized expression values from the
@@ -19,12 +20,17 @@ ExpressionSet. Note: run \code{addRawFC(tt)} before merging with
 ExpressionSet values.
 }
 \examples{
-# fit <- lmFit(eset,design)
-# fit <- contrasts.fit(fit, contrast.matrix)
-# fit <- eBayes(fit)
-# tt <- topTable(fit, coef="mycontrast", number=nrow(fit))
-# tt <- addRawFC(tt)
-# tt <- mergett(tt, eset)
+\dontrun{
+fit <- lmFit(eset,design)
+fit <- contrasts.fit(fit, contrast.matrix)
+fit <- eBayes(fit)
+tt <- topTable(fit, coef="mycontrast", number=nrow(fit))
+tt <- addRawFC(tt)
+tt <- mergett(tt, eset)
+}
+}
+\author{
+Stephen Turner
 }
 \keyword{keywords}
 

@@ -1,6 +1,9 @@
 #' List objects in package
 #' 
-#' List all the objects in a package. Orig Karthik Ram.
+#' List all the objects in a package.
+#' 
+#' @author Karthik Ram
+#' @keywords keywords
 #' 
 #' @param package The name of the package you're examining.
 #' @param all.names a logical value. If TRUE, all object names are returned. If FALSE, names which begin with a . are omitted.
@@ -8,12 +11,12 @@
 #' 
 #' @return A character vector of all the objects in the specified package.
 #' 
-#' @keywords keywords
-#' 
 #' @export
 #' 
 #' @examples
+#' \dontrun{
 #' lsp(stats)
+#' }
 
 lsp <-function(package, all.names = FALSE, pattern) {
     package <- deparse(substitute(package))

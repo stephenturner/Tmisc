@@ -18,5 +18,8 @@ in a "long" one-column numbered format.
 \examples{
 n(iris)
 }
+\author{
+Stephen Turner
+}
 \keyword{keywords}
 

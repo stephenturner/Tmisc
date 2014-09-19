@@ -16,10 +16,15 @@ lsp(package, all.names = FALSE, pattern)
 A character vector of all the objects in the specified package.
 }
 \description{
-List all the objects in a package. Orig Karthik Ram.
+List all the objects in a package.
 }
 \examples{
+\dontrun{
 lsp(stats)
+}
+}
+\author{
+Karthik Ram
 }
 \keyword{keywords}
 

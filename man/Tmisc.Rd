@@ -5,6 +5,9 @@
 \alias{Tmisc-package}
 \title{Tmisc}
 \description{
-Turner's miscellaneous functions
+Stephen Turner's miscellaneous functions
+}
+\author{
+Stephen Turner
 }
 

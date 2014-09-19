@@ -20,7 +20,12 @@ ID. E.g., if url is \url{https://gist.github.com/user/abc123}, the ID is
 abc123.
 }
 \examples{
-# read.gist("6fa823bb2de7e541ad54", header=TRUE)
+\dontrun{
+read.gist("6fa823bb2de7e541ad54", header=TRUE)
+}
+}
+\author{
+Hadley Wickham, Stephen Turner
 }
 \keyword{keywords}
 

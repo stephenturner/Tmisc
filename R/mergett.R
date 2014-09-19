@@ -1,25 +1,29 @@
 #' Merge topTable with expression values
 #' 
-#' Merges topTable output with normalized expression values from the
-#' ExpressionSet. Note: run \code{addRawFC(tt)} before merging with
+#' Merges topTable output with normalized expression values from the 
+#' ExpressionSet. Note: run \code{addRawFC(tt)} before merging with 
 #' ExpressionSet values.
 #' 
+#' @author Stephen Turner
+#' @keywords keywords
+#'   
 #' @param tt A topTable
 #' @param eset An ExpressionSet object from which tt derives
 #'   
-#' @return An expanded topTable with gene expression values merged in, sorted by p-value.
-#'   
-#' @keywords keywords
+#' @return An expanded topTable with gene expression values merged in, sorted by
+#'   p-value.
 #'   
 #' @export
 #' 
 #' @examples
-#' # fit <- lmFit(eset,design)
-#' # fit <- contrasts.fit(fit, contrast.matrix)
-#' # fit <- eBayes(fit)
-#' # tt <- topTable(fit, coef="mycontrast", number=nrow(fit))
-#' # tt <- addRawFC(tt)
-#' # tt <- mergett(tt, eset)
+#' \dontrun{
+#' fit <- lmFit(eset,design)
+#' fit <- contrasts.fit(fit, contrast.matrix)
+#' fit <- eBayes(fit)
+#' tt <- topTable(fit, coef="mycontrast", number=nrow(fit))
+#' tt <- addRawFC(tt)
+#' tt <- mergett(tt, eset)
+#' }
 
 mergett <- function(tt, eset) {
     require(Biobase)
@@ -37,7 +41,7 @@ mergett <- function(tt, eset) {
         stop("nrow(tt) != nrow(exprset)")
     }
     message(paste("nrow(newtt):", nrow(newtt)))
-    newtt <- newtt[order(newtt$P.Val), ] #reorder by p-value
+    newtt <- newtt[order(newtt$P.Value), ] #reorder by p-value
     rownames(newtt) <- NULL
     newtt
 }

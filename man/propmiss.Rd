@@ -18,5 +18,8 @@ missing values for each variable in a data.frame
 \examples{
 propmiss(data.frame(a=1:5, b=c(6,NA,NA,9,10)))
 }
+\author{
+Stephen Turner
+}
 \keyword{keywords}
 

@@ -17,5 +17,8 @@ Returns string with today's date in YYYY-MM-DD- format concatenated to filename.
 \examples{
 datename("myfile.png")
 }
+\author{
+Stephen Turner
+}
 \keyword{keywords}
 

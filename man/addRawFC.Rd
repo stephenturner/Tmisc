@@ -12,7 +12,8 @@ addRawFC(tt)
 A new topTable with absLogFC and rawFC
 }
 \description{
-Takes a limma topTable as input, and adds the absolute value of the log2 FC, and the raw FC (2^logFC).
+Takes a limma topTable as input, and adds the absolute value of the log2 FC,
+and the raw FC (2^logFC).
 }
 \examples{
 \dontrun{
@@ -22,6 +23,9 @@ fit <- eBayes(fit)
 tt <- topTable(fit, coef="mycontrast", number=nrow(fit))
 tt <- addRawFC(tt)
 }
+}
+\author{
+Stephen Turner
 }
 \keyword{keywords}
 

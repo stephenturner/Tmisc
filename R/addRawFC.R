@@ -3,11 +3,12 @@
 #' Takes a limma topTable as input, and adds the absolute value of the log2 FC,
 #' and the raw FC (2^logFC).
 #' 
+#' @author Stephen Turner
+#' @keywords keywords
+#' 
 #' @param tt A topTable
 #'   
 #' @return A new topTable with absLogFC and rawFC
-#'   
-#' @keywords keywords
 #'   
 #' @export
 #' 
