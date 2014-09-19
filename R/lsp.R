@@ -1,28 +1,23 @@
 #' List objects in package
 #' 
-#' List all the objects in a package.
+#' Lists functions and how to call them for any package.
 #' 
-#' @author Karthik Ram
+#' @author Stephen Turner
 #' @keywords keywords
 #' 
 #' @param package The name of the package you're examining.
-#' @param all.names a logical value. If TRUE, all object names are returned. If FALSE, names which begin with a . are omitted.
-#' @param pattern an optional regular expression. Only names matching pattern are returned. glob2rx can be used to convert wildcard patterns to regular expressions.
+#' @param ... further arguments to be passed to \code{lsf.str}
 #' 
-#' @return A character vector of all the objects in the specified package.
+#' @return A list of functions and how to call them for any package.
 #' 
 #' @export
 #' 
 #' @examples
 #' \dontrun{
-#' lsp(stats)
+#' lsp(Tmisc, pattern="un")
 #' }
 
-lsp <-function(package, all.names = FALSE, pattern) {
+lsp <-function(package, ...) {
     package <- deparse(substitute(package))
-    ls(
-        pos = paste("package", package, sep = ":"),
-        all.names = all.names,
-        pattern = pattern
-    )
+    lsf.str(paste0("package:", package), ...)
 }

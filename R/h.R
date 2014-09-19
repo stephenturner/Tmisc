@@ -1,6 +1,6 @@
-#' Shortcut for head
-#' 
 #' Return the First or Last Part of an Object
+#' 
+#' Shortcut to \code{\link{head}}.
 #' 
 #' @author Stephen Turner
 #' @keywords keywords

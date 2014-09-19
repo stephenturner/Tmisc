@@ -3,28 +3,26 @@
 \alias{lsp}
 \title{List objects in package}
 \usage{
-lsp(package, all.names = FALSE, pattern)
+lsp(package, ...)
 }
 \arguments{
 \item{package}{The name of the package you're examining.}
 
-\item{all.names}{a logical value. If TRUE, all object names are returned. If FALSE, names which begin with a . are omitted.}
-
-\item{pattern}{an optional regular expression. Only names matching pattern are returned. glob2rx can be used to convert wildcard patterns to regular expressions.}
+\item{...}{further arguments to be passed to \code{lsf.str}}
 }
 \value{
-A character vector of all the objects in the specified package.
+A list of functions and how to call them for any package.
 }
 \description{
-List all the objects in a package.
+Lists functions and how to call them for any package.
 }
 \examples{
 \dontrun{
-lsp(stats)
+lsp(Tmisc, pattern="un")
 }
 }
 \author{
-Karthik Ram
+Stephen Turner
 }
 \keyword{keywords}
 

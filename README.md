@@ -6,6 +6,7 @@ The `Tmisc` package is where I keep miscellaneous functions. Most of them were p
 * `datename`: add today's date to a string. E.g. `datename(output.csv)` returns `2014-03-15-output.csv` if today were the Ides of March
 * `h`: a shortcut for `head`
 * `ht`: `rbind`s the output of `head` and `tail`
+* `ipak`: shortcut to `install.packages`
 * `lsa`: lists all the objects in the environment, their type, size, and dimensions
 * `mergett`: merges a limma `topTable` with the original expression data in the `ExpressionSet`
 * `%nin%`: opposite of `%in%`
