@@ -13,8 +13,8 @@
 #' @export
 #' 
 #' @examples
-#' n(iris)
+#' nn(iris)
 
-n <- function(df) {
+nn <- function(df) {
     matrix(names(df))
 }
