@@ -1,6 +1,7 @@
 #' Add more FCs to topTable
 #' 
-#' Takes a limma topTable as input, and adds the absolute value of the log2 FC, and the raw FC (2^logFC).
+#' Takes a limma topTable as input, and adds the absolute value of the log2 FC,
+#' and the raw FC (2^logFC).
 #' 
 #' @param tt A topTable
 #'   
@@ -11,11 +12,13 @@
 #' @export
 #' 
 #' @examples
-#' # fit <- lmFit(eset,design)
-#' # fit <- contrasts.fit(fit, contrast.matrix)
-#' # fit <- eBayes(fit)
-#' # tt <- topTable(fit, coef="mycontrast", number=nrow(fit))
-#' # tt <- addRawFC(tt)
+#' \dontrun{
+#' fit <- lmFit(eset,design)
+#' fit <- contrasts.fit(fit, contrast.matrix)
+#' fit <- eBayes(fit)
+#' tt <- topTable(fit, coef="mycontrast", number=nrow(fit))
+#' tt <- addRawFC(tt)
+#' }
  
 addRawFC <- function(tt) {
     if (class(tt)!="data.frame") stop("Doesn't look like a data.frame")

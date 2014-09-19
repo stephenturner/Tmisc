@@ -5,9 +5,11 @@ Author: Stephen Turner <vustephen@gmail.com>
 Maintainer: Stephen Turner <vustephen@gmail.com>
 Description: Some generic convenience functions.
 Depends:
-    R (>= 3.0.0), httr
+    R (>= 3.0.0),
+    httr
 Suggests:
-    knitr, Biobase
+    knitr,
+    Biobase
 License: GPL-3
 LazyData: true
 VignetteBuilder: knitr
