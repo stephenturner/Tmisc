@@ -26,10 +26,9 @@
 #' }
 
 mergett <- function(tt, eset) {
-    require(Biobase)
     if (class(tt)!="data.frame") stop("tt should be a data.frame")
     if (class(eset)!="ExpressionSet") stop("eset should be an ExpressionSet")
-    exprset <- data.frame(exprs(eset))
+    exprset <- data.frame(Biobase::exprs(eset))
     exprset$ID <- rownames(exprset)
     rownames(exprset) <- NULL
     message(paste("nrow(tt):", nrow(tt)))
