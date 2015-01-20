@@ -3,13 +3,15 @@ Title: Tmisc: Turner miscellaneous functions
 Version: 0.1.0
 Author: Stephen Turner <vustephen@gmail.com>
 Maintainer: Stephen Turner <vustephen@gmail.com>
-Description: The Tmisc package has miscellaneous utility functions for importing and examining data and manipulating output from the limma package.
+Description: The Tmisc package has miscellaneous utility functions for
+    importing and examining data and manipulating output from the limma
+    package.
 Depends:
     R (>= 3.0.0)
+Imports:
+    Biobase
 Suggests:
-    knitr,
-    Biobase,
-    httr
+    knitr
 License: GPL-3
 LazyData: true
 VignetteBuilder: knitr
