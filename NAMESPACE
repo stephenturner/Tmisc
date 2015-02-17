@@ -3,6 +3,7 @@
 export("%nin%")
 export(addRawFC)
 export(datename)
+export(dfclass)
 export(h)
 export(ht)
 export(ipak)
