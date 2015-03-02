@@ -13,6 +13,8 @@
 #' @return An expanded topTable with gene expression values merged in, sorted by
 #'   p-value.
 #'   
+#' @importFrom Biobase exprs
+#'   
 #' @export
 #' 
 #' @examples
@@ -28,7 +30,7 @@
 mergett <- function(tt, eset) {
     if (class(tt)!="data.frame") stop("tt should be a data.frame")
     if (class(eset)!="ExpressionSet") stop("eset should be an ExpressionSet")
-    exprset <- data.frame(Biobase::exprs(eset))
+    exprset <- data.frame(exprs(eset))
     exprset$ID <- rownames(exprset)
     rownames(exprset) <- NULL
     message(paste("nrow(tt):", nrow(tt)))
