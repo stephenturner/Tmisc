@@ -21,6 +21,13 @@ The `Tmisc` package is where I keep miscellaneous functions. Most of them were p
 
 ## Installation
 
+This package requires a Bioconductor installation:
+
+```coffee
+source("http://bioconductor.org/biocLite.R")
+biocLite("Biobase")
+```
+
 Download the zip or tarball and install with `R CMD INSTALL`, or better yet, use [devtools](https://github.com/hadley/devtools) to install directly from GitHub:
 
 ```coffee
