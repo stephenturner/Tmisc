@@ -9,7 +9,8 @@ Description: The Tmisc package has miscellaneous utility functions for
 Depends:
     R (>= 3.0.0)
 Imports:
-    Biobase
+    Biobase,
+    dplyr
 Suggests:
     knitr
 License: GPL-3
