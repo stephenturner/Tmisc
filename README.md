@@ -5,6 +5,7 @@ The `Tmisc` package is where I keep miscellaneous functions. Most of them were p
 * `addRawFC`: adds raw fold change to limma `topTable` output
 * `datename`: add today's date to a string. E.g. `datename(output.csv)` returns `2014-03-15-output.csv` if today were the Ides of March
 * `dfclass`: prints the class of all data frame columns in a friendly format
+* `dfsigfig`: Round the numeric columns of a data frame to a specified number of significant digits
 * `ipak`: shortcut to `install.packages`
 * `lsa`: lists all the objects in the environment, their type, size, and dimensions
 * `lsp`: lists functions and how to call them for any package.
