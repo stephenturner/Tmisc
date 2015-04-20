@@ -25,6 +25,6 @@ deseqresult2tbl <- function(deseqresult) {
     deseqresult$gene <- rownames(deseqresult)
     rownames(deseqresult) <- NULL
     deseqresult <- tbl_df(deseqresult)
-    deseqresult <- select(deseqresult, gene, log2FoldChange:padj)
-    deseqresult %>% arrange(padj)
+    deseqresult <- select(deseqresult, gene, baseMean:padj)
+    deseqresult %>% arrange(padj) %>% arrange(pvalue)
 }
