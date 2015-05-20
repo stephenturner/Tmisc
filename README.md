@@ -1,6 +1,8 @@
 # Tmisc
 
-The `Tmisc` package is where I keep miscellaneous functions. Most of them were pulled from my `.Rprofile`, and many were stolen from other packages or random places around the web. I tried to give credit where credit is due in the documentation. Here's what the package currently does:
+The `Tmisc` package is where I keep miscellaneous functions. Most of them were pulled from my `.Rprofile`, and many were stolen from other packages or random places around the web. I tried to give credit where credit is due in the documentation.
+
+## Tmisc functions
 
 * `addRawFC`: adds raw fold change to limma `topTable` output
 * `datename`: add today's date to a string. E.g. `datename(output.csv)` returns `2014-03-15-output.csv` if today were the Ides of March
@@ -19,6 +21,10 @@ The `Tmisc` package is where I keep miscellaneous functions. Most of them were p
 * `unfactor`: change all factor variables to character variables in a data frame
 * `unrowname`: removes row names from a data.frame
 
+## Tmisc data
+
+* `quartet`: Tidy version of built-in Anscombe's Quartet data. Four datasets that have nearly identical linear regression properties, yet appear very different when graphed. See [my blog post about this data](http://www.gettinggeneticsdone.com/2015/02/using-and-abusing-data-visualization.html).
+* `Tcols`: A palette of 17 diverging colors created by combining the Set1 and Dark2 palettes from RColorBrewer. See what they look like by plotting this: `barplot(rep(1, 17), col=Tcols, axes=F, names=c(rep("Set1", 9), rep("Dark2", 8)), horiz=TRUE, las=2)`.
 
 ## Installation
 
