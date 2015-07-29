@@ -17,6 +17,7 @@ The `Tmisc` package is where I keep miscellaneous functions. Most of them were p
 * `propmiss`: get missingness statistics on columns in a data.frame
 * `read.cb`: reads data from the clipboard
 * `rownames_to_symprobes`: don't worry about it. Used in my microarray analysis pipeline. See `?rownames_to_symprobes` if you're that interested.
+* `saveit`: Allows renaming objects as you save them
 * `sicb`: writes the output of `sessionInfo()` to the clipboard (only works on Mac)
 * `unfactor`: change all factor variables to character variables in a data frame
 * `unrowname`: removes row names from a data.frame

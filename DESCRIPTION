@@ -1,6 +1,6 @@
 Package: Tmisc
 Title: Tmisc: Turner miscellaneous functions
-Version: 0.1.0
+Version: 0.1.1
 Author: Stephen Turner <vustephen@gmail.com>
 Maintainer: Stephen Turner <vustephen@gmail.com>
 Description: The Tmisc package has miscellaneous utility functions for
