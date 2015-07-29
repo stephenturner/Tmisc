@@ -3,3 +3,4 @@
 ^\.Rproj\.user$
 LICENSE
 R/TEMPLATE.R
+cran-comments.md
