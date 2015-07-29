@@ -7,10 +7,10 @@
 propmiss(df)
 }
 \arguments{
-\item{df}{A data.frame object}
+\item{df}{A data.frame.}
 }
 \value{
-A data.frame with missingness stats
+A data.frame with missingness stats.
 }
 \description{
 Returns the number of missing values, total length, and proportion
@@ -22,5 +22,5 @@ propmiss(data.frame(a=1:5, b=c(6,NA,NA,9,10)))
 \author{
 Stephen Turner
 }
-\keyword{keywords}
+\keyword{NA}
 

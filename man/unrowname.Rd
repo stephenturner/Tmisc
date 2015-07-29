@@ -7,10 +7,10 @@
 unrowname(x)
 }
 \arguments{
-\item{x}{data frame}
+\item{x}{A data.frame.}
 }
 \value{
-A data frame with rownames removed
+A data.frame with rownames removed.
 }
 \description{
 Strip rownames from an object (stolen from plyr).

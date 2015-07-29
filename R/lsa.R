@@ -1,18 +1,18 @@
 #' Improved list of objects
 #' 
 #' Improved list of objects.  Sorts by size by default.  This was shamelessly 
-#' stolen from \url{http://stackoverflow.com/q/1358003/654296}
+#' stolen from \url{http://stackoverflow.com/q/1358003/654296}.
 #' 
 #' @author Dirk Eddelbuettel, Tony Breyal
-#' @keywords keywords
+#' @keywords NA
 #'   
-#' @param pos numeric. Position in the stack
-#' @param pattern Regex to filter the objects by
+#' @param pos numeric. Position in the stack.
+#' @param pattern Regex to filter the objects by.
 #' @param order.by character. Either 'Type', 'Size', 'PrettySize', 'Rows', or 
-#'   'Columns'. This will dictate how the output is ordered
-#' @param decreasing logical. Should the output be displayed in decreasing order
+#'   'Columns'. This will dictate how the output is ordered.
+#' @param decreasing logical. Should the output be displayed in decreasing order?
 #' @param head logical. Use head on the output?
-#' @param n numeric. Number of objects to display is head is TRUE
+#' @param n numeric. Number of objects to display is head is TRUE.
 #'   
 #' @return A data.frame with type, size in bytes, human-readable size, rows, and
 #'   columns of every object in the environment.

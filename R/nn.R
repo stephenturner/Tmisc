@@ -1,17 +1,21 @@
-#' Get class of all data frame columns
+#' Get names and class of all columns in a data frame
 #' 
-#' Get class of all data frame columns in a friendly format
+#' Get names and class of all columns in a data frame in a friendly format.
 #' 
 #' @author Stephen Turner
-#' @keywords keywords
+#' @keywords NA
 #' 
-#' @param df A data.frame object
+#' @param df A data.frame.
 #' 
-#' @return A data.frame with index and class
+#' @return A data.frame with index and class.
 #' 
 #' @export
 #' 
 #' @examples
-#' dfclass(iris)
+#' nn(iris)
 
-dfclass <- function(df) data.frame(index=1:ncol(df), class=sapply(df, class))
+nn <- function(df) data.frame(var=names(df), 
+                              index=1:ncol(df), 
+                              class=sapply(df, class), 
+                              row.names=NULL)
+nn(iris)

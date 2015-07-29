@@ -3,7 +3,7 @@
 #' Returns a logical vector of elements of x that are not in y.
 #' 
 #' @author Stephen Turner
-#' @keywords keywords
+#' @keywords NA
 #' 
 #' @param x A "left" vector
 #' @param y A "right" vector

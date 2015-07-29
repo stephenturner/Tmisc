@@ -13,7 +13,7 @@ read.cb(...)
 A data.frame
 }
 \description{
-Read tabular data from the clipboard
+Read tabular data from the clipboard.
 }
 \examples{
 \dontrun{

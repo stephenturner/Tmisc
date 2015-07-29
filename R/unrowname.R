@@ -5,9 +5,9 @@
 #' @author Hadley Wickham
 #' @keywords keywords
 #' 
-#' @param x data frame
+#' @param x A data.frame.
 #'   
-#' @return A data frame with rownames removed
+#' @return A data.frame with rownames removed.
 #'   
 #' @export
 #' 

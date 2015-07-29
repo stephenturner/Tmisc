@@ -1,8 +1,10 @@
-#' Anscombe's Quartet data
+#' A palette of 17 diverging colors
 #' 
-#' 17 diverging colors created by combining the Set1 and Dark2 palettes from RColorBrewer.
+#' 17 diverging colors created by combining the Set1 and Dark2 palettes from 
+#' RColorBrewer.
 #' 
-#' @source R Color brewer: \code{c(brewer.pal(9, "Set1"), brewer.pal(8, "Dark2"))}.
+#' @source R Color brewer: \code{c(brewer.pal(9, "Set1"), brewer.pal(8, 
+#'   "Dark2"))}.
 #' @format Vector of 17 diverging colors.
 #' @examples
 #' \dontrun{

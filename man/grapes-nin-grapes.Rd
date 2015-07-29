@@ -23,5 +23,5 @@ Returns a logical vector of elements of x that are not in y.
 \author{
 Stephen Turner
 }
-\keyword{keywords}
+\keyword{NA}
 

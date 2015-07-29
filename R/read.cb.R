@@ -1,6 +1,6 @@
 #' Read from the clipboard
 #' 
-#' Read tabular data from the clipboard
+#' Read tabular data from the clipboard.
 #' 
 #' @author Stephen Turner
 #' @keywords keywords

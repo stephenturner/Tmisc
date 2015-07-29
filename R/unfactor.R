@@ -1,14 +1,15 @@
-#' Change factors to characters
+#' Unfactor a data.frame
 #' 
-#' Change factors to characters in a dataframe
+#' Did you forget to pass \code{stringsAsFactors=FALSE}? This converts factor
+#' variables to characters in a dataframe.
 #' 
 #' @author \url{https://github.com/Dasonk}
-#' @keywords keywords
-#' 
-#' @param df The dataframe you wish to change the factors into characters
-#' 
-#' @return A data.frame with factors converted to characters
-#' 
+#' @keywords NA
+#'   
+#' @param df The dataframe you wish to change the factors into characters.
+#'   
+#' @return A data.frame with factors converted to characters.
+#'   
 #' @export
 #' 
 #' @examples

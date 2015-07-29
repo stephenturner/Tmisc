@@ -7,7 +7,7 @@
 datename(filename = "filename")
 }
 \arguments{
-\item{filename}{A filename string}
+\item{filename}{A filename string.}
 }
 \value{
 String with today's date in YYYY-MM-DD- format concatenated to filename.

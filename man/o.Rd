@@ -7,7 +7,7 @@
 o()
 }
 \description{
-Open the current working directory on mac
+Opens the current working directory on mac.
 }
 \examples{
 \dontrun{
@@ -17,5 +17,5 @@ o()
 \author{
 Stephen Turner
 }
-\keyword{keywords}
+\keyword{NA}
 

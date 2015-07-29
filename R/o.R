@@ -1,9 +1,9 @@
 #' Open the current working directory on mac
 #' 
-#' Open the current working directory on mac
+#' Opens the current working directory on mac.
 #' 
 #' @author Stephen Turner
-#' @keywords keywords
+#' @keywords NA
 #' 
 #' @export
 #' 
@@ -17,6 +17,6 @@ o <- function() {
         message(getwd())
         system("open .")
     } else {
-        warning("This only works on Mac.")
+        warning("This only works on Mac.\nKnow how to use Windows? Submit a PR at:\nhttps://github.com/stephenturner/Tmisc")
     }
 }

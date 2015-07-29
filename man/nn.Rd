@@ -2,19 +2,18 @@
 % Please edit documentation in R/nn.R
 \name{nn}
 \alias{nn}
-\title{Numbered list of column names}
+\title{Get names and class of all columns in a data frame}
 \usage{
 nn(df)
 }
 \arguments{
-\item{df}{A data.frame object}
+\item{df}{A data.frame.}
 }
 \value{
-A single column numbered list of data.frame names
+A data.frame with index and class.
 }
 \description{
-Given data.frame df, return the `names` of that data.frame
-in a "long" one-column numbered format.
+Get names and class of all columns in a data frame in a friendly format.
 }
 \examples{
 nn(iris)
@@ -22,5 +21,5 @@ nn(iris)
 \author{
 Stephen Turner
 }
-\keyword{keywords}
+\keyword{NA}
 

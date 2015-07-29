@@ -6,7 +6,7 @@
 #' @keywords keywords
 #' 
 #' @param package The name of the package you're examining.
-#' @param ... further arguments to be passed to \code{lsf.str}
+#' @param ... further arguments to be passed to \code{lsf.str}.
 #' 
 #' @return A list of functions and how to call them for any package.
 #' 

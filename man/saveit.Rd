@@ -7,12 +7,13 @@
 saveit(..., file = stop("'file' must be specified"))
 }
 \arguments{
-\item{...}{Objects to save}
+\item{...}{Objects to save.}
 
-\item{file}{Filename/path where data will be saved}
+\item{file}{Filename/path where data will be saved.}
 }
 \description{
-Allows you to rename objects as you save them. See \url{http://stackoverflow.com/a/21248218/654296}.
+Allows you to rename objects as you save them. See
+\url{http://stackoverflow.com/a/21248218/654296}.
 }
 \examples{
 \dontrun{
@@ -23,5 +24,5 @@ saveit(bar=foo, file="foobar.Rdata")
 \author{
 Stephen Turner
 }
-\keyword{keywords}
+\keyword{NA}
 

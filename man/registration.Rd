@@ -4,18 +4,19 @@
 \alias{registration}
 \title{Get registration link}
 \usage{
-registration(x = NULL)
-}
-\arguments{
-\item{x}{Keep \code{NULL} for now.}
+registration()
 }
 \value{
 A registration link
 }
 \description{
-Returns a link to register for a course. This is used to ensure that
-participants were able to successfully download and install R and Rstudio
-before coming to the course.
+Returns a link to register for a course. This reads a text file that I keep
+on my website that reveals a URL used to register for a course. I change the
+URL on my website, and the result of running the function changes. I use this
+so that I can give instructions needed to set up for a course, which includes
+instructions to download this package and run this function. This is used to
+ensure that participants were able to successfully download and install R and
+the required packages before coming to the course.
 }
 \examples{
 registration()
@@ -23,5 +24,5 @@ registration()
 \author{
 Stephen Turner
 }
-\keyword{keywords}
+\keyword{NA}
 

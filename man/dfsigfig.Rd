@@ -7,15 +7,15 @@
 dfsigfig(df, n = 3)
 }
 \arguments{
-\item{df}{A data.frame object}
+\item{df}{A data.frame.}
 
-\item{n}{The number of significant digits to round off to}
+\item{n}{The number of significant digits to round off to.}
 }
 \value{
-A data.frame rounded to n significant digits
+A data.frame rounded to n significant digits.
 }
 \description{
-Round the numeric columns of a data frame to a specified number of significant digits
+Round the numeric columns of a data frame to a specified number of significant digits.
 }
 \examples{
 dfsigfig(mtcars,1)

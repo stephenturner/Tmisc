@@ -1,12 +1,13 @@
 #' Rename objects while saving.
 #' 
-#' Allows you to rename objects as you save them. See \url{http://stackoverflow.com/a/21248218/654296}.
+#' Allows you to rename objects as you save them. See
+#' \url{http://stackoverflow.com/a/21248218/654296}.
 #' 
 #' @author Stephen Turner
-#' @keywords keywords
-#' 
-#' @param ... Objects to save
-#' @param file Filename/path where data will be saved
+#' @keywords NA
+#'   
+#' @param ... Objects to save.
+#' @param file Filename/path where data will be saved.
 #'   
 #' @export
 #' 

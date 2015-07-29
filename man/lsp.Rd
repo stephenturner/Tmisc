@@ -9,7 +9,7 @@ lsp(package, ...)
 \arguments{
 \item{package}{The name of the package you're examining.}
 
-\item{...}{further arguments to be passed to \code{lsf.str}}
+\item{...}{further arguments to be passed to \code{lsf.str}.}
 }
 \value{
 A list of functions and how to call them for any package.

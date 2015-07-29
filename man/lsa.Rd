@@ -8,18 +8,18 @@ lsa(pos = 1, pattern, order.by = "Size", decreasing = TRUE, head = TRUE,
   n = 10)
 }
 \arguments{
-\item{pos}{numeric. Position in the stack}
+\item{pos}{numeric. Position in the stack.}
 
-\item{pattern}{Regex to filter the objects by}
+\item{pattern}{Regex to filter the objects by.}
 
 \item{order.by}{character. Either 'Type', 'Size', 'PrettySize', 'Rows', or
-'Columns'. This will dictate how the output is ordered}
+'Columns'. This will dictate how the output is ordered.}
 
-\item{decreasing}{logical. Should the output be displayed in decreasing order}
+\item{decreasing}{logical. Should the output be displayed in decreasing order?}
 
 \item{head}{logical. Use head on the output?}
 
-\item{n}{numeric. Number of objects to display is head is TRUE}
+\item{n}{numeric. Number of objects to display is head is TRUE.}
 }
 \value{
 A data.frame with type, size in bytes, human-readable size, rows, and
@@ -27,7 +27,7 @@ A data.frame with type, size in bytes, human-readable size, rows, and
 }
 \description{
 Improved list of objects.  Sorts by size by default.  This was shamelessly
-stolen from \url{http://stackoverflow.com/q/1358003/654296}
+stolen from \url{http://stackoverflow.com/q/1358003/654296}.
 }
 \examples{
 \dontrun{
@@ -39,5 +39,5 @@ lsa()
 \author{
 Dirk Eddelbuettel, Tony Breyal
 }
-\keyword{keywords}
+\keyword{NA}
 

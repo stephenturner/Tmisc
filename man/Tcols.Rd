@@ -3,16 +3,18 @@
 \docType{data}
 \name{Tcols}
 \alias{Tcols}
-\title{Anscombe's Quartet data}
+\title{A palette of 17 diverging colors}
 \format{Vector of 17 diverging colors.}
 \source{
-R Color brewer: \code{c(brewer.pal(9, "Set1"), brewer.pal(8, "Dark2"))}.
+R Color brewer: \code{c(brewer.pal(9, "Set1"), brewer.pal(8,
+  "Dark2"))}.
 }
 \usage{
 Tcols
 }
 \description{
-17 diverging colors created by combining the Set1 and Dark2 palettes from RColorBrewer.
+17 diverging colors created by combining the Set1 and Dark2 palettes from
+RColorBrewer.
 }
 \examples{
 \dontrun{

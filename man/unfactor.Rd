@@ -2,18 +2,19 @@
 % Please edit documentation in R/unfactor.R
 \name{unfactor}
 \alias{unfactor}
-\title{Change factors to characters}
+\title{Unfactor a data.frame}
 \usage{
 unfactor(df)
 }
 \arguments{
-\item{df}{The dataframe you wish to change the factors into characters}
+\item{df}{The dataframe you wish to change the factors into characters.}
 }
 \value{
-A data.frame with factors converted to characters
+A data.frame with factors converted to characters.
 }
 \description{
-Change factors to characters in a dataframe
+Did you forget to pass \code{stringsAsFactors=FALSE}? This converts factor
+variables to characters in a dataframe.
 }
 \examples{
 df <- data.frame(a = letters[1:5], x = 1:5, y = LETTERS[1:5], stringsAsFactors = TRUE)
@@ -24,5 +25,5 @@ str(df)
 \author{
 \url{https://github.com/Dasonk}
 }
-\keyword{keywords}
+\keyword{NA}
 

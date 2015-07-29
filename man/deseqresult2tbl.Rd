@@ -13,7 +13,7 @@ deseqresult2tbl(deseqresult)
 a tidy version of the DESeq2 results.
 }
 \description{
-Returns a tidy version of a DESeq2 results table
+Returns a tidy version of a DESeq2 results table.
 }
 \examples{
 \dontrun{
@@ -24,5 +24,5 @@ res <- deseqresult2tbl
 \author{
 Stephen Turner
 }
-\keyword{keywords}
+\keyword{NA}
 

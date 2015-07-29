@@ -4,11 +4,11 @@
 #' missing values for each variable in a data.frame
 #' 
 #' @author Stephen Turner
-#' @keywords keywords
+#' @keywords NA
 #' 
-#' @param df A data.frame object
+#' @param df A data.frame.
 #' 
-#' @return A data.frame with missingness stats
+#' @return A data.frame with missingness stats.
 #' 
 #' @export
 #' 
@@ -26,7 +26,7 @@ propmiss <- function(df) {
     d <- data.frame(t(m))
     d <- sapply(d, unlist)
     d <- as.data.frame(d)
-    d$variable <- row.names(d)
+    d$var <- row.names(d)
     row.names(d) <- NULL
     d <- cbind(d[ncol(d)],d[-ncol(d)])
     return(d[order(d$propmiss), ])

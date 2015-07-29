@@ -18,6 +18,6 @@ sicb <- function() {
     if (Sys.info()[1]=="Darwin") {
         capture.output(sessionInfo(), file=pipe("pbcopy"))
     } else {
-        message("This only works on mac.")
+        warning("This only works on Mac.\nKnow how to use Windows? Submit a PR at:\nhttps://github.com/stephenturner/Tmisc")
     }
 }

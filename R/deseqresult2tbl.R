@@ -1,9 +1,9 @@
 #' Tidy DESeq2 result
 #' 
-#' Returns a tidy version of a DESeq2 results table
+#' Returns a tidy version of a DESeq2 results table.
 #' 
 #' @author Stephen Turner
-#' @keywords keywords
+#' @keywords NA
 #' 
 #' @param deseqresult Results from running \code{results(dds)} on a DESeqDataSet object.
 #'   
