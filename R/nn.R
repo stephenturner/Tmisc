@@ -1,20 +1,17 @@
-#' Numbered list of column names
+#' Get class of all data frame columns
 #' 
-#' Given data.frame df, return the `names` of that data.frame
-#' in a "long" one-column numbered format.
+#' Get class of all data frame columns in a friendly format
 #' 
 #' @author Stephen Turner
 #' @keywords keywords
 #' 
 #' @param df A data.frame object
 #' 
-#' @return A single column numbered list of data.frame names
+#' @return A data.frame with index and class
 #' 
 #' @export
 #' 
 #' @examples
-#' nn(iris)
+#' dfclass(iris)
 
-nn <- function(df) {
-    matrix(names(df))
-}
+dfclass <- function(df) data.frame(index=1:ncol(df), class=sapply(df, class))
