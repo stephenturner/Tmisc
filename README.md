@@ -8,7 +8,7 @@ Install from [CRAN](https://cran.r-project.org/web/packages/Tmisc/index.html):
 install.packages("Tmisc")
 ```
 
-Install from GitHub (potentially unstable):
+Install from [GitHub](https://github.com/stephenturner/Tmisc) (potentially unstable):
 
 ```r
 install.packages("devtools")
