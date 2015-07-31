@@ -11,7 +11,6 @@ install.packages("Tmisc")
 Install from GitHub (potentially unstable):
 
 ```r
-# Install the package
 install.packages("devtools")
 devtools::install_github("stephenturner/Tmisc")
 ```
