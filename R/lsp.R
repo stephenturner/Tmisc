@@ -11,6 +11,7 @@
 #' @return A list of functions and how to call them for any package.
 #' 
 #' @export
+#' @import utils
 #' 
 #' @examples
 #' \dontrun{

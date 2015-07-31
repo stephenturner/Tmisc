@@ -10,6 +10,7 @@
 #' @return A data.frame
 #' 
 #' @export
+#' @import utils
 #' 
 #' @examples
 #' \dontrun{

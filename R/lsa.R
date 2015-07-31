@@ -18,6 +18,7 @@
 #'   columns of every object in the environment.
 #'   
 #' @export
+#' @import utils
 #' 
 #' @examples
 #' \dontrun{

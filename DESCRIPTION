@@ -8,6 +8,7 @@ Description: Miscellaneous data and utility functions
 Depends:
     R (>= 3.0.0)
 Imports:
-    dplyr
+    dplyr,
+    utils
 License: GPL-3
 LazyData: true

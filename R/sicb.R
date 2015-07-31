@@ -6,6 +6,7 @@
 #' @keywords sessioninfo
 #' 
 #' @export
+#' @import utils
 #' 
 #' @examples
 #' \dontrun{
