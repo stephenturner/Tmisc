@@ -17,5 +17,5 @@
 #' write.csv(x,file=filename,row.names=FALSE)
 #' peek(filename)
 #' }
-
+#' @export
 peek <- function(x,n=5) scan(x,what="char",n=n,sep="\n")

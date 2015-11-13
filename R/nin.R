@@ -10,9 +10,8 @@
 #' 
 #' @return A logical vector of things in \code{x} that aren't in \code{y}.
 #' 
-#' @export
-#' 
 #' @examples
 #' 1:10 %nin% seq(from=2, to=10, by=2)
-
+#' 
+#' @export
 `%nin%` <- function(x, y) !(x %in% y) 

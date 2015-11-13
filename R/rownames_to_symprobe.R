@@ -14,14 +14,13 @@
 #' @param tt A topTable object.
 #'   
 #' @return Character vector of the gene symbol with the probe ID.
-#'   
-#' @export
 #' 
 #' @examples
 #' \dontrun{
 #' rownames_to_symprobe(esprs(eset), topTable(fit, number=nrow(fit)))
 #' }
-
+#'   
+#' @export
 rownames_to_symprobe <- function (exprset, tt) {
     if(class(tt)!="data.frame") stop("tt isn't a data frame")
     if(class(exprset)!="matrix") stop("exprset isn't a matrix")

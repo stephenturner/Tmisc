@@ -4,8 +4,6 @@
 #' 
 #' @author Stephen Turner
 #' @keywords sessioninfo
-#' 
-#' @export
 #' @import utils
 #' 
 #' @examples
@@ -13,7 +11,8 @@
 #' # Write sessionInfo() to the clipboard on mac.
 #' sicb()
 #' }
-
+#' 
+#' @export
 sicb <- function() {
     # Check to make sure you're running on mac.
     if (Sys.info()[1]=="Darwin") {

@@ -9,11 +9,10 @@
 #' 
 #' @return A data.frame rounded to n significant digits.
 #' 
-#' @export
-#' 
 #' @examples
 #' dfsigfig(mtcars,1)
-
+#' 
+#' @export
 dfsigfig <- function(df, n=3) {
     df[ ,sapply(df, is.numeric)] <- signif(df[ ,sapply(df, is.numeric)], n)
     df

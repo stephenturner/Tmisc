@@ -8,8 +8,6 @@
 #' @param deseqresult Results from running \code{results(dds)} on a DESeqDataSet object.
 #'   
 #' @return a tidy version of the DESeq2 results.
-#'   
-#' @export
 #' 
 #' @import dplyr
 #' 
@@ -18,7 +16,8 @@
 #' res <- results(dds)
 #' res <- deseqresult2tbl
 #' }
- 
+#'   
+#' @export
 deseqresult2tbl <- function(deseqresult) {
     gene=baseMean=padj=pvalue=NULL #gets rid of the note on pkg check
     if (class(deseqresult) != "DESeqResults") stop("Not a DESeqResults object.")

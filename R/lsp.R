@@ -9,15 +9,14 @@
 #' @param ... further arguments to be passed to \code{lsf.str}.
 #' 
 #' @return A list of functions and how to call them for any package.
-#' 
-#' @export
 #' @import utils
 #' 
 #' @examples
 #' \dontrun{
 #' lsp(Tmisc, pattern="un")
 #' }
-
+#' 
+#' @export
 lsp <-function(package, ...) {
     package <- deparse(substitute(package))
     lsf.str(paste0("package:", package), ...)

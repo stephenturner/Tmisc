@@ -16,8 +16,6 @@
 #'   
 #' @return A data.frame with type, size in bytes, human-readable size, rows, and
 #'   columns of every object in the environment.
-#'   
-#' @export
 #' @import utils
 #' 
 #' @examples
@@ -26,7 +24,8 @@
 #' b <- matrix(1, 1000, 100)
 #' lsa()
 #' }
-
+#'   
+#' @export
 lsa <- function (pos = 1, pattern, order.by = "Size",
                   decreasing=TRUE, head=TRUE, n=10) {
     napply <- function(names, fn) sapply(names, function(x)

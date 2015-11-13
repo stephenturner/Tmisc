@@ -12,12 +12,11 @@
 #' @keywords NA
 #'   
 #' @return A registration link
-#'   
-#' @export
 #' 
 #' @examples
 #' registration()
-
+#'   
+#' @export
 registration <- function() {
     # Where do you keep the registration link?
     myurl <- "http://stephenturner.us/f/Tmisc-registration-link.txt"

@@ -10,11 +10,10 @@
 #' 
 #' @return A data.frame with missingness stats.
 #' 
-#' @export
-#' 
 #' @examples
 #' propmiss(data.frame(a=1:5, b=c(6,NA,NA,9,10)))
-
+#' 
+#' @export
 propmiss <- function(df) {
     m <- sapply(df, function(x) {
         data.frame(

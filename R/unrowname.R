@@ -8,11 +8,11 @@
 #' @param x A data.frame.
 #'   
 #' @return A data.frame with rownames removed.
-#'   
-#' @export
 #' 
 #' @examples
 #' unrowname(mtcars)
+#'   
+#' @export
 
 unrowname <- function(x) {
     rownames(x) <- NULL

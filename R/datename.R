@@ -9,9 +9,8 @@
 #' 
 #' @return String with today's date in YYYY-MM-DD- format concatenated to filename.
 #' 
-#' @export
-#' 
 #' @examples
 #' datename("myfile.png")
-
+#' 
+#' @export
 datename <- function(filename="filename") paste0(Sys.Date(), "-", filename)

@@ -5,13 +5,12 @@
 #' @author Stephen Turner
 #' @keywords NA
 #' 
-#' @export
-#' 
 #' @examples
 #' \dontrun{
 #' o()
 #' }
-
+#' 
+#' @export
 o <- function() {
     if(Sys.info()[1]=="Darwin") {
         message(getwd())

@@ -8,14 +8,14 @@
 #'   
 #' @param ... Objects to save.
 #' @param file Filename/path where data will be saved.
-#'   
-#' @export
 #' 
 #' @examples
 #' \dontrun{
 #' foo <- 1
 #' saveit(bar=foo, file="foobar.Rdata")
 #' }
+#'   
+#' @export
  
 saveit <- function(..., file=stop("'file' must be specified")) {
     x <- list(...)

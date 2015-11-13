@@ -8,8 +8,6 @@
 #' @param ... Arguments to be passed to \code{read.table}
 #' 
 #' @return A data.frame
-#' 
-#' @export
 #' @import utils
 #' 
 #' @examples
@@ -17,7 +15,8 @@
 #' # To read CSV data with a header from the clipboard:
 #' read.cb(header=TRUE, sep=',')
 #' }
-
+#' 
+#' @export
 read.cb <- function(...) {
     ismac <- Sys.info()[1]=="Darwin"
     if (!ismac) read.table(file="clipboard", ...)
