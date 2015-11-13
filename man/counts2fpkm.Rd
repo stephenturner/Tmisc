@@ -20,7 +20,7 @@ taking log of zero. Used only if \code{log=TRUE}.}
 A matrix of FPKM values.
 }
 \description{
-Takes a count matrix and a vector of gene lengths and returns an optionally \code{log2}-transformed FPKM matrix.
+Takes a count matrix and a vector of gene lengths and returns an optionally \code{log2}-transformed FPKM matrix. Modified from edgeR.
 }
 \examples{
 \dontrun{

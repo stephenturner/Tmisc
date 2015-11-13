@@ -1,6 +1,6 @@
 #' Fragments per kilobase per million
 #' 
-#' Takes a count matrix and a vector of gene lengths and returns an optionally \code{log2}-transformed FPKM matrix.
+#' Takes a count matrix and a vector of gene lengths and returns an optionally \code{log2}-transformed FPKM matrix. Modified from edgeR.
 #' 
 #' @author Davis McCarthy
 #' @author Gordon Smyth
