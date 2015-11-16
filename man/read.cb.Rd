@@ -4,10 +4,12 @@
 \alias{read.cb}
 \title{Read from the clipboard}
 \usage{
-read.cb(...)
+read.cb(header = TRUE, ...)
 }
 \arguments{
-\item{...}{Arguments to be passed to \code{read.table}}
+\item{header}{A logical value indicating whether the file contains the names of the variables as its first line. Overrides the default \code{header=FALSE} option in \code{read.table()}.}
+
+\item{...}{Further arguments to be passed to \code{read.table}}
 }
 \value{
 A data.frame
