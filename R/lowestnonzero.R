@@ -11,6 +11,8 @@
 #' @param x A vector of p-values between 0 and 1.
 #'   
 #' @return A vector of p-values where zero values are exchanged for the lowest non-zero p-value in the original vector.
+#' 
+#' @importFrom stats na.omit
 #'   
 #' @examples
 #' lowestnonzero(c(.042, .02, 0, .001, 0, .89))

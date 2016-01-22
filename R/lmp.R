@@ -5,6 +5,8 @@
 #' @param modelobject A model object of class \code{lm}. 
 #'
 #' @return The p-value on the f-test of a linear model object testing the null hypothesis that R^2==0.
+#' 
+#' @importFrom stats pf
 #'
 #' @examples
 #' # simulate some (e.g. SNP genotype) data
