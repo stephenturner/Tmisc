@@ -6,6 +6,7 @@
 #' @keywords NA
 #' 
 #' @param x A numeric vector to rescale.
+#' @param to output range (numeric vector of length two)
 #' 
 #' @return The numeric vector scaled from zero to one.
 #' 
