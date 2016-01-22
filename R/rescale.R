@@ -1,6 +1,6 @@
-#' Rescale 0 to 1
+#' Rescale a vector
 #' 
-#' Rescales a vector from 0 to 1. Borrowed from the scales package.
+#' Rescale a vector to have specified min and max. Borrowed from the scales package.
 #' 
 #' @author Stephen Turner
 #' @keywords NA
@@ -10,16 +10,15 @@
 #' @return The numeric vector scaled from zero to one.
 #' 
 #' @examples
-#' rescale01(runif(10))
-#' rescale01(1:11)
-#' rescale01(c(1,1))
-#' rescale01(1)
-#' rescale01(c(1, NA, 2))
+#' rescale(runif(10))
+#' rescale(1:11)
+#' rescale(c(1,1))
+#' rescale(1)
+#' rescale(c(1, NA, 2))
 #' 
 #' @export
-rescale01 <- function (x) {
+rescale <- function (x, to=c(0,1)) {
     r <- range(x, na.rm=TRUE, finite=TRUE)
-    to <- c(0,1)
     if(length(x)==1 | abs(r[2]-r[1])<1000*.Machine$double.eps) {
         return(ifelse(is.na(x), NA, mean(to)))
     }
