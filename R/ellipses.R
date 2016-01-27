@@ -14,7 +14,7 @@
 #' ellipses(mtcars, 5)
 #' 
 #' @export
-ellipses <- function(df, n) {
+ellipses <- function(df, n=5L) {
     stopifnot("data.frame" %in% class(df))
     els <- rep("...", ncol(df)) %>% 
         matrix(nrow=1, dimnames=list(NULL, names(df))) %>% 

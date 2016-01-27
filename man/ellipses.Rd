@@ -4,7 +4,7 @@
 \alias{ellipses}
 \title{Truncate a data frame with ellipses.}
 \usage{
-ellipses(df, n)
+ellipses(df, n = 5L)
 }
 \arguments{
 \item{df}{A data.frame.}
