@@ -1,3 +1,7 @@
+# Tmisc 0.1.7
+
+- `gghues` generates color palette emulating ggplot2's default hues.
+
 # Tmisc 0.1.6
 
 - `fisherp()` uses Fisher's method to combine p-values.
