@@ -19,8 +19,9 @@ This will emulate ggplot2's hues, which are equally spaced hues around the color
 }
 \examples{
 n <- 10
-barplot(1:n, col=gghues(n), main="ggplot2 defaults")
-barplot(1:n, col=gghues(n, start=15+180), main="180 degree offset")
+gghues(3)
+barplot(rep(1,n), col=gghues(n), names=gghues(n))
+barplot(rep(1,n), col=gghues(n, start=15+180), names=gghues(n, start=15+180))
 
 }
 \author{

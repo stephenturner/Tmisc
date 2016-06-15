@@ -14,8 +14,9 @@
 #'   
 #' @examples
 #' n <- 10
-#' barplot(1:n, col=gghues(n), main="ggplot2 defaults")
-#' barplot(1:n, col=gghues(n, start=15+180), main="180 degree offset")
+#' gghues(3)
+#' barplot(rep(1,n), col=gghues(n), names=gghues(n))
+#' barplot(rep(1,n), col=gghues(n, start=15+180), names=gghues(n, start=15+180))
 #' 
 #' @export
 gghues <- function(n, start=15) {
