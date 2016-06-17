@@ -1,3 +1,7 @@
+# Tmisc 0.1.8
+
+- `jsd()` compute the Jensen-Shannon divergence from a matrix of probabilities.
+
 # Tmisc 0.1.7
 
 - `gghues` generates color palette emulating ggplot2's default hues.
