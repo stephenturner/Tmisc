@@ -10,8 +10,6 @@
 #'   
 #' @return A combined p-value.
 #' 
-#' @importFrom stats na.omit pchisq
-#'   
 #' @examples
 #' Mode(c(1,2,2,3,3,3,10))
 #' Mode(c("A", "C", "C", "B", "B"))
