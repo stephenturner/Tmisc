@@ -1,6 +1,8 @@
 # Tmisc 0.1.8
 
 - `jsd()` compute the Jensen-Shannon divergence from a matrix of probabilities.
+- `Mode()` returns the mode of a vector.
+- `gg_na()` produces a plot showing the missing values in a data frame.
 
 # Tmisc 0.1.7
 
