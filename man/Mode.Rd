@@ -4,12 +4,14 @@
 \alias{Mode}
 \title{Mode.}
 \usage{
-Mode(x, na.rm = TRUE)
+Mode(x, na.rm = FALSE)
 }
 \arguments{
 \item{x}{A vector.}
 
-\item{na.rm}{Remove missing values before calculating the mode (TRUE by default).}
+\item{na.rm}{Remove missing values before calculating the mode (FALSE by
+default). NAs are counted just like any other element. That is, an NA in
+the vector won't necessarily result in a return NA. See the first example.}
 }
 \value{
 A combined p-value.
@@ -18,10 +20,11 @@ A combined p-value.
 Returns the mode of a vector. First in a tie wins (see examples).
 }
 \examples{
-Mode(c(1,2,2,3,3,3,10))
-Mode(c("A", "C", "C", "B", "B"))
-Mode(c(10,20,20,30,30,30,NA, NA, NA, NA, NA, 100))
-Mode(c(1,2,2,3,3,3,NA, NA, NA, NA, NA, 10), na.rm=FALSE)
+Mode(c(1,2,2,3,3,3, NA))
+Mode(c(1,2,2,3,3,3, NA), na.rm=TRUE)
+Mode(c(1,2,2,3,3,3, NA, NA, NA, NA))
+Mode(c(1,2,2,3,3,3, NA, NA, NA, NA), na.rm=TRUE)
+Mode(c("A", "Z", "Z", "B", "B"))
 
 }
 \author{
