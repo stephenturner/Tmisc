@@ -1,3 +1,7 @@
+# Tmisc 0.1.9
+
+- Minor bugfixes.
+
 # Tmisc 0.1.8
 
 - `jsd()` compute the Jensen-Shannon divergence from a matrix of probabilities.
