@@ -1,3 +1,7 @@
+# Tmisc 0.1.10
+
+- `Tpairs()` displays better pairwise scatterplot matrices than `pairs()`.
+
 # Tmisc 0.1.9
 
 - Minor bugfixes.
