@@ -2,6 +2,7 @@
 
 export("%nin%")
 export(Mode)
+export(Thist)
 export(Tpairs)
 export(are_all_equal)
 export(counts2fpkm)
