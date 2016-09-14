@@ -3,6 +3,7 @@
 - `Tpairs()` displays better pairwise scatterplot matrices than `pairs()`.
 - `Thist()` plots a histogram with either a normal distribution or density plot overlay.
 - `corner()` displays the first few rows and columns of a data frame or matrix.
+- `beep()` plays a short beep to alert when something's done (from the beepr package).
 
 # Tmisc 0.1.9
 
