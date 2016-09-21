@@ -14,8 +14,10 @@
 #' @return A registration link
 #' 
 #' @examples
+#' \dontrun{
 #' registration()
-#'   
+#' }
+#' 
 #' @export
 registration <- function() {
     # Where do you keep the registration link?

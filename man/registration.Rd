@@ -19,8 +19,10 @@ ensure that participants were able to successfully download and install R and
 the required packages before coming to the course.
 }
 \examples{
+\dontrun{
 registration()
-  
+}
+
 }
 \author{
 Stephen Turner
