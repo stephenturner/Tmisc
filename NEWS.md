@@ -1,3 +1,7 @@
+# Tmisc 0.1.12
+
+- Minor bugfixes
+
 # Tmisc 0.1.11
 
 - `convert_to_NA()` converts string values to true `NA` values (adapted from [sfirke/janitor](https://cran.r-project.org/web/packages/janitor/index.html))

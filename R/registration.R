@@ -10,6 +10,9 @@
 #' 
 #' @author Stephen Turner
 #' @keywords NA
+#' 
+#' @param check logical; set to TRUE to check the registration link
+#' @param myurl the URL to visit to print a registration link
 #'   
 #' @return A registration link
 #' 
@@ -19,11 +22,8 @@
 #' }
 #' 
 #' @export
-registration <- function(check=FALSE, myurl=NA) {
+registration <- function(check=FALSE, myurl="http://stephenturner.us/files/Tmisc-registration-link.txt") {
     if (check) {
-        if (is.na(myurl)) {
-            myurl <- "http://stephenturner.us/files/Tmisc-registration-link.txt"
-        }
         reglink <- scan(myurl, what="char", sep="\n", n=1, quiet=TRUE)
         if (reglink=="") reglink <- NA
         message(paste0("Please visit the following link to register:\n", reglink))

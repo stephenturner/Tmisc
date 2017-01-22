@@ -4,7 +4,13 @@
 \alias{registration}
 \title{Get registration link}
 \usage{
-registration()
+registration(check = FALSE,
+  myurl = "http://stephenturner.us/files/Tmisc-registration-link.txt")
+}
+\arguments{
+\item{check}{logical; set to TRUE to check the registration link}
+
+\item{myurl}{the URL to visit to print a registration link}
 }
 \value{
 A registration link
