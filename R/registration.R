@@ -19,10 +19,15 @@
 #' }
 #' 
 #' @export
-registration <- function() {
-    # Where do you keep the registration link?
-    myurl <- "http://stephenturner.us/f/Tmisc-registration-link.txt"
-    reglink <- scan(myurl, what="char", sep="\n", n=1, quiet=TRUE)
-    if (reglink=="") reglink <- NA
-    message(paste0("Please visit the following link to register:\n", reglink))
+registration <- function(check=FALSE, myurl=NA) {
+    if (check) {
+        if (is.na(myurl)) {
+            myurl <- "http://stephenturner.us/files/Tmisc-registration-link.txt"
+        }
+        reglink <- scan(myurl, what="char", sep="\n", n=1, quiet=TRUE)
+        if (reglink=="") reglink <- NA
+        message(paste0("Please visit the following link to register:\n", reglink))
+    } else {
+        message("Usage: registration(check=TRUE)")
+    }
 }
