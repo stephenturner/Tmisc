@@ -4,9 +4,9 @@
 
 # Tmisc 0.1.11
 
-- `convert_to_NA()` converts string values to true `NA` values (adapted from [sfirke/janitor](https://cran.r-project.org/web/packages/janitor/index.html))
-- `clean_names()` cleans up the names in a data frame. Resulting names are unique and consist only of the `_` character, lowercase letters, and numbers (taken from [sfirke/janitor](https://cran.r-project.org/web/packages/janitor/index.html)).
-- `remove_empty_rows()` and `remove_empty_cols()` removes any rows or columns composed entirely of `NA` values (taken from [sfirke/janitor](https://cran.r-project.org/web/packages/janitor/index.html)).
+- `convert_to_NA()` converts string values to true `NA` values (adapted from [sfirke/janitor](https://cran.r-project.org/package=janitor))
+- `clean_names()` cleans up the names in a data frame. Resulting names are unique and consist only of the `_` character, lowercase letters, and numbers (taken from [sfirke/janitor](https://cran.r-project.org/package=janitor)).
+- `remove_empty_rows()` and `remove_empty_cols()` removes any rows or columns composed entirely of `NA` values (taken from [sfirke/janitor](https://cran.r-project.org/package=janitor)).
 
 # Tmisc 0.1.10
 
