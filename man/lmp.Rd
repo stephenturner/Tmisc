@@ -32,4 +32,3 @@ names(fit)
 lmp(fit)
 
 }
-

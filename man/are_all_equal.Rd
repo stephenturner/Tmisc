@@ -31,4 +31,3 @@ are_all_equal(c(5L, 5, 5.000000001))
 Stephen Turner
 }
 \keyword{keywords}
-

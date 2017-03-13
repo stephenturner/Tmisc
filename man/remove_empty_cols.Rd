@@ -22,4 +22,3 @@ Removes all columns from a data.frame that are composed entirely of \code{NA} va
 # x \%>\% remove_empty_cols
 
 }
-

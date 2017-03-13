@@ -26,4 +26,3 @@ res <- deseqresult2tbl
 Stephen Turner
 }
 \keyword{NA}
-

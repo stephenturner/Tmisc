@@ -26,4 +26,3 @@ saveit(bar=foo, file="foobar.Rdata")
 Stephen Turner
 }
 \keyword{NA}
-

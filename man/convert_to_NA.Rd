@@ -29,4 +29,3 @@ convert_to_NA(mtcars, "4") # a silly example;
 convert_to_NA(letters, c("b", "d"))
 
 }
-

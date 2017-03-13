@@ -32,4 +32,3 @@ rownames_to_symprobe(esprs(eset), topTable(fit, number=nrow(fit)))
 Stephen Turner
 }
 \keyword{NA}
-

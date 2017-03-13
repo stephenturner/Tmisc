@@ -23,4 +23,3 @@ unrowname(mtcars)
 Hadley Wickham
 }
 \keyword{keywords}
-

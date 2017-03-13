@@ -23,4 +23,3 @@ fisherp(c(.042, .02, .001, 0.01, .89))
 Stephen Turner
 }
 \keyword{keywords}
-

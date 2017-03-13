@@ -26,4 +26,3 @@ strSort(c("cba", NA))
 Stephen Turner
 }
 \keyword{keywords}
-

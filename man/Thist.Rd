@@ -31,4 +31,3 @@ Thist(x^2, overlay="density", breaks=50, col="lightblue2")
 Stephen Turner
 }
 \keyword{NA}
-

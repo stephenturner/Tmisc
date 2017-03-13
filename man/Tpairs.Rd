@@ -28,4 +28,3 @@ Tpairs(iris[-5], pch=21, bg=gghues(3)[factor(iris$Species)], gap=1)
 Stephen Turner
 }
 \keyword{NA}
-

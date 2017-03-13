@@ -25,4 +25,3 @@ Returns a logical vector of elements of x that are not in y.
 Stephen Turner
 }
 \keyword{NA}
-

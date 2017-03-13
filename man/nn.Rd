@@ -23,4 +23,3 @@ nn(iris)
 Stephen Turner
 }
 \keyword{NA}
-

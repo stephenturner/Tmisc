@@ -27,4 +27,3 @@ lsp(Tmisc, pattern="un")
 Stephen Turner
 }
 \keyword{keywords}
-

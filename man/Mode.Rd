@@ -31,4 +31,3 @@ Mode(c("A", "Z", "Z", "B", "B"))
 Stephen Turner
 }
 \keyword{keywords}
-

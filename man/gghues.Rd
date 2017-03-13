@@ -28,4 +28,3 @@ barplot(rep(1,n), col=gghues(n, start=15+180), names=gghues(n, start=15+180))
 Stephen Turner
 }
 \keyword{keywords}
-

@@ -11,4 +11,3 @@ Stephen Turner's miscellaneous functions
 \author{
 Stephen Turner
 }
-

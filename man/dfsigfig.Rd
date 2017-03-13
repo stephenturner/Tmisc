@@ -24,4 +24,3 @@ dfsigfig(mtcars,1)
 \author{
 Stephen Turner
 }
-

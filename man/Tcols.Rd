@@ -21,4 +21,3 @@ RColorBrewer.
 }
 }
 \keyword{datasets}
-

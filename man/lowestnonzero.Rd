@@ -26,4 +26,3 @@ lowestnonzero(c(.042, .02, 0, .001, 0, .89))
 Stephen Turner
 }
 \keyword{keywords}
-

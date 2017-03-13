@@ -30,4 +30,3 @@ gg_na(x)
 Stephen Turner
 }
 \keyword{NA}
-

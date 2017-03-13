@@ -23,4 +23,3 @@ datename("myfile.png")
 Stephen Turner
 }
 \keyword{keywords}
-

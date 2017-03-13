@@ -41,4 +41,3 @@ lsa()
 Dirk Eddelbuettel, Tony Breyal
 }
 \keyword{NA}
-

@@ -18,4 +18,3 @@ nearly identical linear regression properties, yet appear very different when
 graphed.
 }
 \keyword{datasets}
-

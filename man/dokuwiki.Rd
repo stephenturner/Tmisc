@@ -28,4 +28,3 @@ dokuwiki(head(mtcars), clip=FALSE, row.names=TRUE)
 \author{
 Stephen Turner
 }
-

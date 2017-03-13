@@ -20,4 +20,3 @@ sicb()
 Stephen Turner
 }
 \keyword{sessioninfo}
-

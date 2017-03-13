@@ -36,4 +36,3 @@ plot(hclust(Mjsd))
 \author{
 Stephen Turner
 }
-

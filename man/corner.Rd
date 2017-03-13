@@ -25,4 +25,3 @@ corner(iris, n=4)
 \author{
 Stephen Turner
 }
-

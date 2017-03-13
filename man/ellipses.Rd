@@ -24,4 +24,3 @@ ellipses(mtcars, 5)
 \author{
 Stephen Turner
 }
-
