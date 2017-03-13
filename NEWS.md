@@ -1,3 +1,7 @@
+# Tmisc 0.1.13
+
+- `Cs()` (from [Hmisc](https://cran.r-project.org/package=Hmisc)): Convenience function to create a quoted character vector from unquoted strings.
+
 # Tmisc 0.1.12
 
 - Minor bugfixes

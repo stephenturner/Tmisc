@@ -1,6 +1,6 @@
 Package: Tmisc
 Title: Turner Miscellaneous
-Version: 0.1.12
+Version: 0.1.13
 Author: Stephen Turner <vustephen@gmail.com>
 Maintainer: Stephen Turner <vustephen@gmail.com>
 Description: Miscellaneous data and utility functions
@@ -13,7 +13,7 @@ Imports:
     audio
 License: GPL-3
 LazyData: true
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
 Suggests: 
     ggplot2,
     reshape2
