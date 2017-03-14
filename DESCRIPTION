@@ -3,8 +3,8 @@ Title: Turner Miscellaneous
 Version: 0.1.13
 Author: Stephen Turner <vustephen@gmail.com>
 Maintainer: Stephen Turner <vustephen@gmail.com>
-Description: Miscellaneous data and utility functions
-    for manipulating data and your R environment.
+Description: Miscellaneous utility functions for data manpulation,
+    data tidying, and working with gene expression data.
 Depends:
     R (>= 3.1.2)
 Imports:
