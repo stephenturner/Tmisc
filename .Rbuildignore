@@ -4,3 +4,5 @@
 LICENSE
 R/TEMPLATE.R
 cran-comments.md
+^docs$
+^_pkgdown\.yml$
