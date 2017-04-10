@@ -1,6 +1,7 @@
 # Tmisc 0.1.14
 
 - Small updates to enable documentation with [pkgdown](https://github.com/hadley/pkgdown).
+- Inconsequential update to `%nin%`
 
 # Tmisc 0.1.13
 
