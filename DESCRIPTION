@@ -9,6 +9,7 @@ Depends:
     R (>= 3.1.2)
 Imports:
     dplyr,
+    tibble,
     utils, 
     audio
 License: GPL-3
