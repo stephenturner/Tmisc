@@ -4,21 +4,23 @@
 \alias{\%nin\%}
 \title{x not in y}
 \usage{
-x \%nin\% y
+x \%nin\% table
 }
 \arguments{
-\item{x}{A "left" vector}
+\item{x}{a vector (numeric, character, factor)}
 
-\item{y}{A "right" vector}
+\item{table}{a vector (numeric, character, factor), matching the mode of x}
 }
 \value{
-A logical vector of things in \code{x} that aren't in \code{y}.
+A logical vector with length equal to \code{x} of things in \code{x} that aren't in \code{y}.
 }
 \description{
 Returns a logical vector of elements of x that are not in y.
 }
 \examples{
 1:10 \%nin\% seq(from=2, to=10, by=2)
+c("a", "b", "c") \%nin\% c("a", "b")
+letters[letters \%nin\% unlist(strsplit("pack my box with five dozen liquor jugs", ""))]
 
 }
 \author{

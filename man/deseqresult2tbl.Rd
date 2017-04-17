@@ -4,10 +4,12 @@
 \alias{deseqresult2tbl}
 \title{Tidy DESeq2 result}
 \usage{
-deseqresult2tbl(deseqresult)
+deseqresult2tbl(deseqresult, colname = "ensgene")
 }
 \arguments{
 \item{deseqresult}{Results from running \code{results(dds)} on a DESeqDataSet object.}
+
+\item{colname}{The name of the column you want to use for what DESeq puts in the row name.}
 }
 \value{
 a tidy version of the DESeq2 results.

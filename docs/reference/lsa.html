@@ -25,7 +25,7 @@
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -79,7 +79,7 @@
 stolen from <a href = 'http://stackoverflow.com/q/1358003/654296'>http://stackoverflow.com/q/1358003/654296</a>.</p>
     
 
-    <pre><span class='fu'>lsa</span>(<span class='kw'>pos</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='no'>pattern</span>, <span class='kw'>order.by</span> <span class='kw'>=</span> <span class='st'>"Size"</span>, <span class='kw'>decreasing</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>head</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
+    <pre class="usage"><span class='fu'>lsa</span>(<span class='kw'>pos</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='no'>pattern</span>, <span class='kw'>order.by</span> <span class='kw'>=</span> <span class='st'>"Size"</span>, <span class='kw'>decreasing</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>head</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
   <span class='kw'>n</span> <span class='kw'>=</span> <span class='fl'>10</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
@@ -119,11 +119,11 @@ stolen from <a href = 'http://stackoverflow.com/q/1358003/654296'>http://stackov
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='co'>## Not run: ------------------------------------</span>
-<span class='co'># a &lt;- rnorm(100000)</span>
-<span class='co'># b &lt;- matrix(1, 1000, 100)</span>
-<span class='co'># lsa()</span>
-<span class='co'>## ---------------------------------------------</span></div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>not_run</span>({
+  <span class='no'>a</span> <span class='kw'>&lt;-</span> <span class='fu'>rnorm</span>(<span class='fl'>100000</span>)
+  <span class='no'>b</span> <span class='kw'>&lt;-</span> <span class='fu'>matrix</span>(<span class='fl'>1</span>, <span class='fl'>1000</span>, <span class='fl'>100</span>)
+  <span class='fu'>lsa</span>()
+})</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

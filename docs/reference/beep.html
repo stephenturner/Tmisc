@@ -25,7 +25,7 @@
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -79,7 +79,7 @@
 for example, when a script has finished. Taken from the <code>beepr</code> package.</p>
     
 
-    <pre><span class='fu'>beep</span>(<span class='kw'>expr</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
+    <pre class="usage"><span class='fu'>beep</span>(<span class='kw'>expr</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <table class="ref-arguments">
@@ -98,14 +98,14 @@ you wanted to get notified about.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='co'>## Not run: ------------------------------------</span>
-<span class='co'># # Play a beep sound</span>
-<span class='co'># beep()</span>
-<span class='co'># </span>
-<span class='co'># </span>
-<span class='co'># # Update all packages and "ping" when it's ready</span>
-<span class='co'># update.packages(ask=FALSE); beep()</span>
-<span class='co'>## ---------------------------------------------</span></div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>not_run</span>({
+  <span class='co'># Play a beep sound</span>
+  <span class='fu'>beep</span>()
+
+
+  <span class='co'># Update all packages and "ping" when it's ready</span>
+  <span class='fu'>update.packages</span>(<span class='kw'>ask</span><span class='kw'>=</span><span class='fl'>FALSE</span>); <span class='fu'>beep</span>()
+})</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

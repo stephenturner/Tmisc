@@ -25,7 +25,7 @@
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -79,7 +79,7 @@
 <a href = 'http://stackoverflow.com/a/21248218/654296'>http://stackoverflow.com/a/21248218/654296</a>.</p>
     
 
-    <pre><span class='fu'>saveit</span>(<span class='no'>...</span>, <span class='kw'>file</span> <span class='kw'>=</span> <span class='fu'>stop</span>(<span class='st'>"'file' must be specified"</span>))</pre>
+    <pre class="usage"><span class='fu'>saveit</span>(<span class='no'>...</span>, <span class='kw'>file</span> <span class='kw'>=</span> <span class='fu'>stop</span>(<span class='st'>"'file' must be specified"</span>))</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <table class="ref-arguments">
@@ -96,10 +96,10 @@
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='co'>## Not run: ------------------------------------</span>
-<span class='co'># foo &lt;- 1</span>
-<span class='co'># saveit(bar=foo, file="foobar.Rdata")</span>
-<span class='co'>## ---------------------------------------------</span></div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>not_run</span>({
+  <span class='no'>foo</span> <span class='kw'>&lt;-</span> <span class='fl'>1</span>
+  <span class='fu'>saveit</span>(<span class='kw'>bar</span><span class='kw'>=</span><span class='no'>foo</span>, <span class='kw'>file</span><span class='kw'>=</span><span class='st'>"foobar.Rdata"</span>)
+})</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

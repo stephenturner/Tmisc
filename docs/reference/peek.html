@@ -25,7 +25,7 @@
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -79,7 +79,7 @@
 "Borrowed" from the rafalib package.</p>
     
 
-    <pre><span class='fu'>peek</span>(<span class='no'>x</span>, <span class='kw'>n</span> <span class='kw'>=</span> <span class='fl'>5</span>)</pre>
+    <pre class="usage"><span class='fu'>peek</span>(<span class='no'>x</span>, <span class='kw'>n</span> <span class='kw'>=</span> <span class='fl'>5</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <table class="ref-arguments">
@@ -97,13 +97,13 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='co'>## Not run: ------------------------------------</span>
-<span class='co'># filename &lt;- tempfile()</span>
-<span class='co'># x&lt;-matrix(round(rnorm(10^4),2),1000,10)</span>
-<span class='co'># colnames(x)=letters[1:10]</span>
-<span class='co'># write.csv(x,file=filename,row.names=FALSE)</span>
-<span class='co'># peek(filename)</span>
-<span class='co'>## ---------------------------------------------</span></div></pre>
+<span class='fu'>not_run</span>({
+  <span class='no'>filename</span> <span class='kw'>&lt;-</span> <span class='fu'>tempfile</span>()
+  <span class='no'>x</span><span class='kw'>&lt;-</span><span class='fu'>matrix</span>(<span class='fu'>round</span>(<span class='fu'>rnorm</span>(<span class='fl'>10</span>^<span class='fl'>4</span>),<span class='fl'>2</span>),<span class='fl'>1000</span>,<span class='fl'>10</span>)
+  <span class='fu'>colnames</span>(<span class='no'>x</span>)<span class='kw'>=</span><span class='no'>letters</span>[<span class='fl'>1</span>:<span class='fl'>10</span>]
+  <span class='fu'>write.csv</span>(<span class='no'>x</span>,<span class='kw'>file</span><span class='kw'>=</span><span class='no'>filename</span>,<span class='kw'>row.names</span><span class='kw'>=</span><span class='fl'>FALSE</span>)
+  <span class='fu'>peek</span>(<span class='no'>filename</span>)
+})</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

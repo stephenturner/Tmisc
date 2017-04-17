@@ -25,7 +25,7 @@
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -83,7 +83,7 @@ heatmap contains the gene names concatenated to the probe ID in case you have
 multiple symbols with the same probeID.</p>
     
 
-    <pre><span class='fu'>rownames_to_symprobe</span>(<span class='no'>exprset</span>, <span class='no'>tt</span>)</pre>
+    <pre class="usage"><span class='fu'>rownames_to_symprobe</span>(<span class='no'>exprset</span>, <span class='no'>tt</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <table class="ref-arguments">
@@ -104,9 +104,9 @@ multiple symbols with the same probeID.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='co'>## Not run: ------------------------------------</span>
-<span class='co'># rownames_to_symprobe(esprs(eset), topTable(fit, number=nrow(fit)))</span>
-<span class='co'>## ---------------------------------------------</span></div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>not_run</span>({
+  <span class='fu'>rownames_to_symprobe</span>(<span class='fu'>esprs</span>(<span class='no'>eset</span>), <span class='fu'>topTable</span>(<span class='no'>fit</span>, <span class='kw'>number</span><span class='kw'>=</span><span class='fu'>nrow</span>(<span class='no'>fit</span>)))
+})</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
