@@ -6,7 +6,7 @@
 #' @keywords NA
 #' 
 #' @param x a vector (numeric, character, factor)
-#' @param y a vector (numeric, character, factor), matching the mode of x
+#' @param table a vector (numeric, character, factor), matching the mode of x
 #' 
 #' @return A logical vector with length equal to \code{x} of things in \code{x} that aren't in \code{y}.
 #' 
