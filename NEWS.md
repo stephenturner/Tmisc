@@ -1,3 +1,7 @@
+# Tmisc 0.1.15
+
+- New function `mat2df()` creates a pairwise distance data frame from a square matrix.
+
 # Tmisc 0.1.14
 
 - `keep_top_n()` thanks to [Jeroen Janssens](https://gist.github.com/jeroenjanssens/1c628c7e07429e5f0f2245e8598ec8e9).
