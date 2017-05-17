@@ -97,10 +97,13 @@
 
     <p>A logical vector with length equal to <code>x</code> of things in <code>x</code> that aren't in <code>y</code>.</p>
     
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <p><code><a href='grapes-like-grapes.html'>%like%</a></code>, <code><a href='grapes-nlike-grapes.html'>%nlike%</a></code>, <code>%nin%</code>,</p>
+    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fl'>1</span>:<span class='fl'>10</span> <span class='kw'>%nin%</span> <span class='fu'>seq</span>(<span class='kw'>from</span><span class='kw'>=</span><span class='fl'>2</span>, <span class='kw'>to</span><span class='kw'>=</span><span class='fl'>10</span>, <span class='kw'>by</span><span class='kw'>=</span><span class='fl'>2</span>)</div><div class='output co'>#&gt;  [1]  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE</div><div class='input'><span class='fu'>c</span>(<span class='st'>"a"</span>, <span class='st'>"b"</span>, <span class='st'>"c"</span>) <span class='kw'>%nin%</span> <span class='fu'>c</span>(<span class='st'>"a"</span>, <span class='st'>"b"</span>)</div><div class='output co'>#&gt; [1] FALSE FALSE  TRUE</div><div class='input'><span class='no'>letters</span>[<span class='no'>letters</span> <span class='kw'>%nin%</span> <span class='fu'>unlist</span>(<span class='fu'>strsplit</span>(<span class='st'>"pack my box with five dozen liquor jugs"</span>, <span class='st'>""</span>))]</div><div class='output co'>#&gt; character(0)</div><div class='input'>
-</div></pre>
+    <pre class="examples"><div class='input'><span class='fl'>1</span>:<span class='fl'>10</span> <span class='kw'>%nin%</span> <span class='fu'>seq</span>(<span class='kw'>from</span><span class='kw'>=</span><span class='fl'>2</span>, <span class='kw'>to</span><span class='kw'>=</span><span class='fl'>10</span>, <span class='kw'>by</span><span class='kw'>=</span><span class='fl'>2</span>)</div><div class='output co'>#&gt;  [1]  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE</div><div class='input'><span class='fu'>c</span>(<span class='st'>"a"</span>, <span class='st'>"b"</span>, <span class='st'>"c"</span>) <span class='kw'>%nin%</span> <span class='fu'>c</span>(<span class='st'>"a"</span>, <span class='st'>"b"</span>)</div><div class='output co'>#&gt; [1] FALSE FALSE  TRUE</div><div class='input'><span class='no'>letters</span>[<span class='no'>letters</span> <span class='kw'>%nin%</span> <span class='fu'>unlist</span>(<span class='fu'>strsplit</span>(<span class='st'>"pack my box with five dozen liquor jugs"</span>, <span class='st'>""</span>))]</div><div class='output co'>#&gt; character(0)</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -108,13 +111,11 @@
       <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#value">Value</a></li>
+
+      <li><a href="#see-also">See also</a></li>
       
       <li><a href="#examples">Examples</a></li>
     </ul>
-
-    <h2>Author</h2>
-    
-Stephen Turner
 
   </div>
 </div>
