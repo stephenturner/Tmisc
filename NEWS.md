@@ -1,6 +1,23 @@
 # Tmisc 0.1.16
 
 - New functions `%like%` and `%nlike%` work like `%in%` and `%nin%`, but where the second argument is a regular expression to match.
+- Added aliases for low-level manipulation in a dplyr pipeline:
+    - `brackets()`
+    - `dollar()`
+    - `is_in()`
+    - `and()`
+    - `or()`
+    - `equals()`
+    - `is_gt()`
+    - `is_geq()`
+    - `is_lt()`
+    - `is_leq()`
+    - `not()`
+    - `set_colnames()`
+    - `set_rownames()`
+    - `set_names()`
+    - `set_attributes()`
+    - `set_attr()`
 
 # Tmisc 0.1.15
 
