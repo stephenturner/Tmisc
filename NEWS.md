@@ -1,3 +1,7 @@
+# Tmisc 0.1.16
+
+- New functions `%like%` and `%nlike%` work like `%in%` and `%nin%`, but where the second argument is a regular expression to match.
+
 # Tmisc 0.1.15
 
 - New function `mat2df()` creates a pairwise distance data frame from a square matrix.
