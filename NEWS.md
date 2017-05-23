@@ -1,6 +1,7 @@
 # Tmisc 0.1.16
 
 - New functions `%like%` and `%nlike%` work like `%in%` and `%nin%`, but where the second argument is a regular expression to match.
+- New function `gt2refalt()` creates a two-letter genotype from a GT field from a VCF file.
 - Installs an RStudio add-in to insert `%in%`.
 - Added aliases for low-level manipulation in a dplyr pipeline:
     - `brackets()`
