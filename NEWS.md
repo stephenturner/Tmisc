@@ -1,3 +1,7 @@
+# Tmisc 0.1.17
+
+- Add in to insert ` = `. Optionally map the keyboard shortcut to Alt+`-` to insert `=` instead of the traditional `<-`.
+
 # Tmisc 0.1.16
 
 - New functions `%like%` and `%nlike%` work like `%in%` and `%nin%`, but where the second argument is a regular expression to match.
