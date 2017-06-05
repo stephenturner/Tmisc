@@ -1,3 +1,7 @@
+# Tmisc 0.1.18
+
+- Added an RMarkdown template.
+
 # Tmisc 0.1.17
 
 - Add in to insert ` = `. Optionally map the keyboard shortcut to Alt+`-` to insert `=` instead of the traditional `<-`.

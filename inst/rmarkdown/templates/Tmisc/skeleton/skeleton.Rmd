@@ -1,0 +1,28 @@
+---
+title: "Untitled"
+author: "Stephen Turner"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  pdf_document: 
+    # fig_caption: yes
+    # toc: yes
+    # latex_engine: xelatex
+# mainfont: Helvetica
+# fontsize: 11pt
+# geometry: margin=1in
+# header-includes:
+# - \usepackage{lscape}    # rotates just images/sections
+# - \usepackage{pdflscape} # rotates whole page
+# - \newcommand{\blandscape}{\begin{landscape}}
+# - \newcommand{\elandscape}{\end{landscape}}
+# bibliography: bibliography.bib
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+library(tidyverse)
+opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE)
+# setwd(file.path(rprojroot::find_rstudio_root_file(), ""))
+```
+
+
