@@ -1,4 +1,5 @@
 .Rhistory
 .Rdata
 .Rproj.user
+.httr-oauth
 TEMPLATE.R

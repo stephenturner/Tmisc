@@ -1,6 +1,7 @@
 ^\.travis\.yml$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^\.httr-oauth$
 LICENSE
 R/TEMPLATE.R
 cran-comments.md
