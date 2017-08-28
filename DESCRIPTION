@@ -1,6 +1,6 @@
 Package: Tmisc
 Title: Turner Miscellaneous
-Version: 0.1.18
+Version: 0.1.19
 Authors@R: person("Stephen", "Turner", email = "vustephen@gmail.com", role = c("aut", "cre"))
 Maintainer: Stephen Turner <vustephen@gmail.com>
 Description: Miscellaneous utility functions for data manipulation,
@@ -13,6 +13,7 @@ Imports:
     tibble,
     utils, 
     audio,
+    gistr,
     rstudioapi
 License: GPL-3
 LazyData: true
