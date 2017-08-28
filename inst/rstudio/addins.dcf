@@ -7,3 +7,8 @@ Name: Insert =
 Description: Inserts ` = ` at the cursor position.
 Binding: insertEqual
 Interactive: false
+
+Name: Make tab into Gist
+Description: Sends the active RStudio source editor to Github as a private gist.
+Binding: gistfo
+Interactive: yes

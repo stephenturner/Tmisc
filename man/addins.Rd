@@ -4,9 +4,16 @@
 \alias{addins}
 \alias{insertInAddin}
 \alias{insertEqual}
+\alias{addins}
+\alias{gistfo}
 \title{Insert text at current position.}
 \description{
 Call these function as an addin to insert desired text at the
   cursor position. After installing Tmisc, hit the Addins menu, and
   optionally add a keyboard shortcut, e.g., Command+Shift+I, Alt+-, etc.
+
+Create a private Github gist containing the active RStudio tab
+  and browse to it. File is named: RStudio_<project>_<filename or file_id>.
+  file_id is a unique id for untitled files. It does not relate to the
+  untitled number. Taken from \url{https://github.com/MilesMcBain/gistfo}.
 }
