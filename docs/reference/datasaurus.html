@@ -23,7 +23,8 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-
+  
+  
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -51,6 +52,12 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+  <a href="..//index.html">
+    <span class="fa fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
@@ -94,21 +101,21 @@
     <p>Justin Matejka, George Fitzmaurice. "Same Stats, Different Graphs:
   Generating Datasets with Varied Appearance and Identical Statistics through
   Simulated Annealing." 2017 ACM SIGCHI Conference on Human Factors in
-  Computing Systems. <a href = 'https://www.autodeskresearch.com/publications/samestats'>https://www.autodeskresearch.com/publications/samestats</a>.</p>
+  Computing Systems. <a href='https://www.autodeskresearch.com/publications/samestats'>https://www.autodeskresearch.com/publications/samestats</a>.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>not_run</span>({
-  <span class='fu'>library</span>(<span class='no'>dplyr</span>)
-  <span class='no'>datasaurus</span> <span class='kw'>%&gt;%</span>
-    <span class='fu'>group_by</span>(<span class='no'>set</span>) <span class='kw'>%&gt;%</span>
-    <span class='fu'>summarize</span>(<span class='fu'>mean</span>(<span class='no'>x</span>), <span class='fu'>mean</span>(<span class='no'>y</span>), <span class='fu'>sd</span>(<span class='no'>x</span>), <span class='fu'>sd</span>(<span class='no'>y</span>), <span class='fu'>cor</span>(<span class='no'>x</span>, <span class='no'>y</span>))
-  <span class='fu'>library</span>(<span class='no'>ggplot2</span>)
-  <span class='fu'>ggplot</span>(<span class='no'>datasaurus</span>, <span class='fu'>aes</span>(<span class='no'>x</span>,<span class='no'>y</span>)) +
-    <span class='fu'>geom_point</span>() +
-    <span class='fu'>geom_smooth</span>(<span class='kw'>method</span><span class='kw'>=</span><span class='st'>"lm"</span>) +
-    <span class='fu'>facet_wrap</span>(~<span class='no'>set</span>)
-})</div></pre>
+    <pre class="examples"><span class='co'># NOT RUN {</span>
+<span class='fu'>library</span>(<span class='no'>dplyr</span>)
+<span class='no'>datasaurus</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='http://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span>(<span class='no'>set</span>) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='http://dplyr.tidyverse.org/reference/summarise.html'>summarize</a></span>(<span class='fu'>mean</span>(<span class='no'>x</span>), <span class='fu'>mean</span>(<span class='no'>y</span>), <span class='fu'>sd</span>(<span class='no'>x</span>), <span class='fu'>sd</span>(<span class='no'>y</span>), <span class='fu'>cor</span>(<span class='no'>x</span>, <span class='no'>y</span>))
+<span class='fu'>library</span>(<span class='no'>ggplot2</span>)
+<span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>datasaurus</span>, <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='no'>x</span>,<span class='no'>y</span>)) +
+  <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/geom_point'>geom_point</a></span>() +
+  <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/geom_smooth'>geom_smooth</a></span>(<span class='kw'>method</span><span class='kw'>=</span><span class='st'>"lm"</span>) +
+  <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/facet_wrap'>facet_wrap</a></span>(~<span class='no'>set</span>)
+<span class='co'># }</span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

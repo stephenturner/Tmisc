@@ -23,7 +23,8 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-
+  
+  
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -51,6 +52,12 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+  <a href="..//index.html">
+    <span class="fa fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
@@ -81,7 +88,7 @@
 
     
     <p>Allows you to rename objects as you save them. See
-<a href = 'http://stackoverflow.com/a/21248218/654296'>http://stackoverflow.com/a/21248218/654296</a>.</p>
+<a href='http://stackoverflow.com/a/21248218/654296'>http://stackoverflow.com/a/21248218/654296</a>.</p>
     
 
     <pre class="usage"><span class='fu'>saveit</span>(<span class='no'>...</span>, <span class='kw'>file</span> <span class='kw'>=</span> <span class='fu'>stop</span>(<span class='st'>"'file' must be specified"</span>))</pre>
@@ -101,10 +108,11 @@
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>not_run</span>({
-  <span class='no'>foo</span> <span class='kw'>&lt;-</span> <span class='fl'>1</span>
-  <span class='fu'>saveit</span>(<span class='kw'>bar</span><span class='kw'>=</span><span class='no'>foo</span>, <span class='kw'>file</span><span class='kw'>=</span><span class='st'>"foobar.Rdata"</span>)
-})</div></pre>
+    <pre class="examples"><span class='co'># NOT RUN {</span>
+<span class='no'>foo</span> <span class='kw'>&lt;-</span> <span class='fl'>1</span>
+<span class='fu'>saveit</span>(<span class='kw'>bar</span><span class='kw'>=</span><span class='no'>foo</span>, <span class='kw'>file</span><span class='kw'>=</span><span class='st'>"foobar.Rdata"</span>)
+<span class='co'># }</span><div class='input'>  
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

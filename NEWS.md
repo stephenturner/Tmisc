@@ -1,3 +1,7 @@
+# Tmisc 0.1.19 
+
+- Minor bugfixes.
+
 # Tmisc 0.1.18
 
 - Added an RMarkdown template.

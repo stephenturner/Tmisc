@@ -23,7 +23,8 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-
+  
+  
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -51,6 +52,12 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+  <a href="..//index.html">
+    <span class="fa fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
@@ -81,7 +88,7 @@
 
     
     <p>Calculates a distance matrix from a matrix of probability distributions using
-Jensen-Shannon divergence. Adapted from <a href = 'http://enterotype.embl.de/enterotypes.html#dm'>http://enterotype.embl.de/enterotypes.html#dm</a>.</p>
+Jensen-Shannon divergence. Adapted from <a href='http://enterotype.embl.de/enterotypes.html#dm'>http://enterotype.embl.de/enterotypes.html#dm</a>.</p>
     
 
     <pre class="usage"><span class='fu'>jsd</span>(<span class='no'>M</span>, <span class='kw'>pseudocount</span> <span class='kw'>=</span> <span class='fl'>1e-06</span>, <span class='kw'>normalizeCounts</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
@@ -121,7 +128,7 @@ Jensen-Shannon divergence. Adapted from <a href = 'http://enterotype.embl.de/ent
 #&gt; sample2 0.04351841                                 
 #&gt; sample3 0.06114582 0.04682573                      
 #&gt; sample4 0.05485535 0.04587213 0.04641441           
-#&gt; sample5 0.04869326 0.04697849 0.03939286 0.04894781</div><div class='input'><span class='fu'>plot</span>(<span class='fu'>hclust</span>(<span class='no'>Mjsd</span>))</div><img src='jsd-4.png' alt='' width='540' height='400' /><div class='input'>  
+#&gt; sample5 0.04869326 0.04697849 0.03939286 0.04894781</div><div class='input'><span class='fu'>plot</span>(<span class='fu'>hclust</span>(<span class='no'>Mjsd</span>))</div><div class='img'><img src='jsd-1.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>  
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
