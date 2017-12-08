@@ -52,7 +52,7 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="..//index.html">
+  <a href="../index.html">
     <span class="fa fa-home fa-lg"></span>
      
   </a>
@@ -117,7 +117,7 @@
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># All the cars</span>
 (<span class='fu'>nrow</span>(<span class='no'>mtcars</span>))</div><div class='output co'>#&gt; [1] 32</div><div class='input'><span class='co'># Only those in the top 2 groups based on the # carbs</span>
-<span class='fu'>nrow</span>(<span class='fu'>keep_top_n</span>(<span class='no'>mtcars</span>, ~<span class='no'>carb</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>2</span>))</div><div class='output co'>#&gt; <span class='message'>Joining, by = "carb"</span></div><div class='output co'>#&gt; [1] 20</div></pre>
+<span class='fu'>nrow</span>(<span class='fu'>keep_top_n</span>(<span class='no'>mtcars</span>, ~<span class='no'>carb</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>2</span>))</div><div class='output co'>#&gt; <span class='error'>Error in quo_is_missing(wt) || quo_is_null(wt): invalid 'y' type in 'x || y'</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
