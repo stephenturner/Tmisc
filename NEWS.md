@@ -1,6 +1,8 @@
 # Tmisc 0.1.19 
 
 - Minor bugfixes.
+- Removed `set_names()` as this is exported from rlang.
+- Removed `beep()`. Use the **beepr** package instead.
 
 # Tmisc 0.1.18
 

@@ -15,7 +15,6 @@
 #' \code{not}             \tab \code{`!`}            \cr
 #' \code{set_colnames}    \tab \code{`colnames<-`}   \cr
 #' \code{set_rownames}    \tab \code{`rownames<-`}   \cr
-#' \code{set_names}       \tab \code{`names<-`}      \cr
 #' \code{set_attributes}  \tab \code{`attributes<-`} \cr
 #' \code{set_attr}        \tab \code{`attr<-`}       \cr
 #' }
@@ -84,11 +83,6 @@ set_colnames <- `colnames<-`
 #' @usage NULL
 #' @export
 set_rownames <- `rownames<-`
-
-#' @rdname aliases
-#' @usage NULL
-#' @export
-set_names <- `names<-`
 
 #' @rdname aliases
 #' @usage NULL

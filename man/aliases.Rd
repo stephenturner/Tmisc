@@ -15,7 +15,6 @@
 \alias{not}
 \alias{set_colnames}
 \alias{set_rownames}
-\alias{set_names}
 \alias{set_class}
 \alias{set_attr}
 \alias{set_attributes}
@@ -36,7 +35,6 @@ Aliases more pleasing to use in a dplyr pipeline:
 \code{not}             \tab \code{`!`}            \cr
 \code{set_colnames}    \tab \code{`colnames<-`}   \cr
 \code{set_rownames}    \tab \code{`rownames<-`}   \cr
-\code{set_names}       \tab \code{`names<-`}      \cr
 \code{set_attributes}  \tab \code{`attributes<-`} \cr
 \code{set_attr}        \tab \code{`attr<-`}       \cr
 }
