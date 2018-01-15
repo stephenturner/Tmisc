@@ -91,10 +91,12 @@
     <div id="tmisc-0-1-19" class="section level1">
 <h1 class="hasAnchor">
 <a href="#tmisc-0-1-19" class="anchor"></a>Tmisc 0.1.19</h1>
+<p>This is primarily a cleanup release. Several functions were included in the Tmisc package early on while packages such as <a href="https://cran.r-project.org/web/packages/janitor/index.html">janitor</a> were in development. This release removes (note, <em>removes</em>, doesn’t deprecate) functions that were previously copied from other packages, introducing a few potentially breaking changes.</p>
 <ul>
-<li>Minor bugfixes.</li>
 <li>Removed <code>set_names()</code> as this is exported from rlang.</li>
-<li>Removed <code>beep()</code>. Use the <strong>beepr</strong> package instead.</li>
+<li>Removed <code>beep()</code>. Use the <strong><a href="https://cran.r-project.org/web/packages/beepr/index.html">beepr</a></strong> package instead.</li>
+<li>Removed <code>remove_empty_cols()</code>, <code>remove_empty_rows()</code>, <code>convert_to_NA()</code> and <code>clean_names()</code>. Use <code>remove_empty()</code>, etc., from the <strong><a href="https://cran.r-project.org/web/packages/janitor/index.html">janitor</a></strong> package instead.</li>
+<li>Removed <code>unrowname()</code>. Use <code><a href="http://www.rdocumentation.org/packages/magrittr/topics/aliases">magrittr::set_rownames()</a></code> (loaded with tidyverse).</li>
 </ul>
 </div>
     <div id="tmisc-0-1-18" class="section level1">
@@ -180,11 +182,11 @@
 <a href="#tmisc-0-1-11" class="anchor"></a>Tmisc 0.1.11</h1>
 <ul>
 <li>
-<code><a href="../reference/convert_to_NA.html">convert_to_NA()</a></code> converts string values to true <code>NA</code> values (adapted from <a href="https://cran.r-project.org/package=janitor">sfirke/janitor</a>)</li>
+<code>convert_to_NA()</code> converts string values to true <code>NA</code> values (adapted from <a href="https://cran.r-project.org/package=janitor">sfirke/janitor</a>)</li>
 <li>
-<code><a href="../reference/clean_names.html">clean_names()</a></code> cleans up the names in a data frame. Resulting names are unique and consist only of the <code>_</code> character, lowercase letters, and numbers (taken from <a href="https://cran.r-project.org/package=janitor">sfirke/janitor</a>).</li>
+<code>clean_names()</code> cleans up the names in a data frame. Resulting names are unique and consist only of the <code>_</code> character, lowercase letters, and numbers (taken from <a href="https://cran.r-project.org/package=janitor">sfirke/janitor</a>).</li>
 <li>
-<code><a href="../reference/remove_empty_rows.html">remove_empty_rows()</a></code> and <code><a href="../reference/remove_empty_cols.html">remove_empty_cols()</a></code> removes any rows or columns composed entirely of <code>NA</code> values (taken from <a href="https://cran.r-project.org/package=janitor">sfirke/janitor</a>).</li>
+<code>remove_empty_rows()</code> and <code>remove_empty_cols()</code> removes any rows or columns composed entirely of <code>NA</code> values (taken from <a href="https://cran.r-project.org/package=janitor">sfirke/janitor</a>).</li>
 </ul>
 </div>
     <div id="tmisc-0-1-10" class="section level1">

@@ -108,9 +108,11 @@ missing values for each variable in a data.frame</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>propmiss</span>(<span class='fu'>data.frame</span>(<span class='kw'>a</span><span class='kw'>=</span><span class='fl'>1</span>:<span class='fl'>5</span>, <span class='kw'>b</span><span class='kw'>=</span><span class='fu'>c</span>(<span class='fl'>6</span>,<span class='fl'>NA</span>,<span class='fl'>NA</span>,<span class='fl'>9</span>,<span class='fl'>10</span>)))</div><div class='output co'>#&gt;   var nmiss n propmiss
-#&gt; 1   a     0 5      0.0
-#&gt; 2   b     2 5      0.4</div><div class='input'>
+    <pre class="examples"><div class='input'><span class='fu'>propmiss</span>(<span class='fu'>data.frame</span>(<span class='kw'>a</span><span class='kw'>=</span><span class='fl'>1</span>:<span class='fl'>5</span>, <span class='kw'>b</span><span class='kw'>=</span><span class='fu'>c</span>(<span class='fl'>6</span>,<span class='fl'>NA</span>,<span class='fl'>NA</span>,<span class='fl'>9</span>,<span class='fl'>10</span>)))</div><div class='output co'>#&gt; # A tibble: 2 x 4
+#&gt;   var   nmiss     n propmiss
+#&gt;   &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;
+#&gt; 1 a      0     5.00    0    
+#&gt; 2 b      2.00  5.00    0.400</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
