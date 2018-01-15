@@ -1,8 +1,11 @@
 # Tmisc 0.1.19 
 
-- Minor bugfixes.
+This is primarily a cleanup release. Several functions were included in the Tmisc package early on while packages such as [janitor](https://cran.r-project.org/web/packages/janitor/index.html) were in development. This release removes (note, _removes_, doesn't deprecate) functions that were previously copied from other packages, introducing a few potentially breaking changes.
+
 - Removed `set_names()` as this is exported from rlang.
-- Removed `beep()`. Use the **beepr** package instead.
+- Removed `beep()`. Use the **[beepr](https://cran.r-project.org/web/packages/beepr/index.html)** package instead.
+- Removed `remove_empty_cols()`, `remove_empty_rows()`, `convert_to_NA()` and `clean_names()`. Use `remove_empty()`, etc., from the **[janitor](https://cran.r-project.org/web/packages/janitor/index.html)** package instead.
+- Removed `unrowname()`. Use `magrittr::set_rownames()` (loaded with tidyverse).
 
 # Tmisc 0.1.18
 
