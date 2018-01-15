@@ -28,5 +28,6 @@ propmiss <- function(df) {
     d$var <- row.names(d)
     row.names(d) <- NULL
     d <- cbind(d[ncol(d)],d[-ncol(d)])
+    d <- tibble::as_tibble(d)
     return(d)
 }
