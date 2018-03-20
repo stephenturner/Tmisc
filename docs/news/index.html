@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>All news • Tmisc</title>
+<title>Changelog • Tmisc</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -18,13 +18,14 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+<meta property="og:title" content="Changelog" />
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -61,7 +62,7 @@
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
-  <a href="../news/index.html">News</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       
@@ -84,13 +85,15 @@
 
   <div class="col-md-9">
     <div class="page-header">
-      <h1>Change log <small>All releases</small></h1>
+      <h1>Change log <small></small></h1>
+      <small>Source: <a href='https://github.com/stephenturner/Tmisc/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
     <div class="contents">
     <div id="tmisc-0-1-19" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tmisc-0-1-19" class="anchor"></a>Tmisc 0.1.19</h1>
+<h1 class="page-header">
+<a href="#tmisc-0-1-19" class="anchor"></a>Tmisc 0.1.19<small> Unreleased </small>
+</h1>
 <p>This is primarily a cleanup release. Several functions were included in the Tmisc package early on while packages such as <a href="https://cran.r-project.org/web/packages/janitor/index.html">janitor</a> were in development. This release removes (note, <em>removes</em>, doesn’t deprecate) functions that were previously copied from other packages, introducing a few potentially breaking changes.</p>
 <ul>
 <li>Removed <code>set_names()</code> as this is exported from rlang.</li>
@@ -100,22 +103,25 @@
 </ul>
 </div>
     <div id="tmisc-0-1-18" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tmisc-0-1-18" class="anchor"></a>Tmisc 0.1.18</h1>
+<h1 class="page-header">
+<a href="#tmisc-0-1-18" class="anchor"></a>Tmisc 0.1.18<small> Unreleased </small>
+</h1>
 <ul>
 <li>Added an RMarkdown template.</li>
 </ul>
 </div>
     <div id="tmisc-0-1-17" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tmisc-0-1-17" class="anchor"></a>Tmisc 0.1.17</h1>
+<h1 class="page-header">
+<a href="#tmisc-0-1-17" class="anchor"></a>Tmisc 0.1.17<small> 2017-06-01 </small>
+</h1>
 <ul>
 <li>Add in to insert <code>=</code>. Optionally map the keyboard shortcut to Alt+<code>-</code> to insert <code>=</code> instead of the traditional <code>&lt;-</code>.</li>
 </ul>
 </div>
     <div id="tmisc-0-1-16" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tmisc-0-1-16" class="anchor"></a>Tmisc 0.1.16</h1>
+<h1 class="page-header">
+<a href="#tmisc-0-1-16" class="anchor"></a>Tmisc 0.1.16<small> 2017-05-23 </small>
+</h1>
 <ul>
 <li>New functions <code>%like%</code> and <code>%nlike%</code> work like <code>%in%</code> and <code>%nin%</code>, but where the second argument is a regular expression to match.</li>
 <li>New function <code><a href="../reference/gt2refalt.html">gt2refalt()</a></code> creates a two-letter genotype from a GT field from a VCF file.</li>
@@ -143,15 +149,17 @@
 </ul>
 </div>
     <div id="tmisc-0-1-15" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tmisc-0-1-15" class="anchor"></a>Tmisc 0.1.15</h1>
+<h1 class="page-header">
+<a href="#tmisc-0-1-15" class="anchor"></a>Tmisc 0.1.15<small> 2017-05-16 </small>
+</h1>
 <ul>
 <li>New function <code><a href="../reference/mat2df.html">mat2df()</a></code> creates a pairwise distance data frame from a square matrix.</li>
 </ul>
 </div>
     <div id="tmisc-0-1-14" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tmisc-0-1-14" class="anchor"></a>Tmisc 0.1.14</h1>
+<h1 class="page-header">
+<a href="#tmisc-0-1-14" class="anchor"></a>Tmisc 0.1.14<small> 2017-05-08 </small>
+</h1>
 <ul>
 <li>
 <code><a href="../reference/keep_top_n.html">keep_top_n()</a></code> thanks to <a href="https://gist.github.com/jeroenjanssens/1c628c7e07429e5f0f2245e8598ec8e9">Jeroen Janssens</a>.</li>
@@ -163,23 +171,26 @@
 </ul>
 </div>
     <div id="tmisc-0-1-13" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tmisc-0-1-13" class="anchor"></a>Tmisc 0.1.13</h1>
+<h1 class="page-header">
+<a href="#tmisc-0-1-13" class="anchor"></a>Tmisc 0.1.13<small> 2017-03-15 </small>
+</h1>
 <ul>
 <li>
 <code><a href="../reference/Cs.html">Cs()</a></code> (from <a href="https://cran.r-project.org/package=Hmisc">Hmisc</a>): Convenience function to create a quoted character vector from unquoted strings.</li>
 </ul>
 </div>
     <div id="tmisc-0-1-12" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tmisc-0-1-12" class="anchor"></a>Tmisc 0.1.12</h1>
+<h1 class="page-header">
+<a href="#tmisc-0-1-12" class="anchor"></a>Tmisc 0.1.12<small> 2017-01-22 </small>
+</h1>
 <ul>
 <li>Minor bugfixes</li>
 </ul>
 </div>
     <div id="tmisc-0-1-11" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tmisc-0-1-11" class="anchor"></a>Tmisc 0.1.11</h1>
+<h1 class="page-header">
+<a href="#tmisc-0-1-11" class="anchor"></a>Tmisc 0.1.11<small> Unreleased </small>
+</h1>
 <ul>
 <li>
 <code>convert_to_NA()</code> converts string values to true <code>NA</code> values (adapted from <a href="https://cran.r-project.org/package=janitor">sfirke/janitor</a>)</li>
@@ -190,8 +201,9 @@
 </ul>
 </div>
     <div id="tmisc-0-1-10" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tmisc-0-1-10" class="anchor"></a>Tmisc 0.1.10</h1>
+<h1 class="page-header">
+<a href="#tmisc-0-1-10" class="anchor"></a>Tmisc 0.1.10<small> 2016-09-14 </small>
+</h1>
 <ul>
 <li>
 <code><a href="../reference/Tpairs.html">Tpairs()</a></code> displays better pairwise scatterplot matrices than <code>pairs()</code>.</li>
@@ -204,15 +216,17 @@
 </ul>
 </div>
     <div id="tmisc-0-1-9" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tmisc-0-1-9" class="anchor"></a>Tmisc 0.1.9</h1>
+<h1 class="page-header">
+<a href="#tmisc-0-1-9" class="anchor"></a>Tmisc 0.1.9<small> 2016-09-01 </small>
+</h1>
 <ul>
 <li>Minor bugfixes.</li>
 </ul>
 </div>
     <div id="tmisc-0-1-8" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tmisc-0-1-8" class="anchor"></a>Tmisc 0.1.8</h1>
+<h1 class="page-header">
+<a href="#tmisc-0-1-8" class="anchor"></a>Tmisc 0.1.8<small> 2016-07-22 </small>
+</h1>
 <ul>
 <li>
 <code><a href="../reference/jsd.html">jsd()</a></code> compute the Jensen-Shannon divergence from a matrix of probabilities.</li>
@@ -225,32 +239,36 @@
 </ul>
 </div>
     <div id="tmisc-0-1-7" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tmisc-0-1-7" class="anchor"></a>Tmisc 0.1.7</h1>
+<h1 class="page-header">
+<a href="#tmisc-0-1-7" class="anchor"></a>Tmisc 0.1.7<small> 2016-06-15 </small>
+</h1>
 <ul>
 <li>
 <code><a href="../reference/gghues.html">gghues()</a></code> generates color palette emulating ggplot2’s default hues.</li>
 </ul>
 </div>
     <div id="tmisc-0-1-6" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tmisc-0-1-6" class="anchor"></a>Tmisc 0.1.6</h1>
+<h1 class="page-header">
+<a href="#tmisc-0-1-6" class="anchor"></a>Tmisc 0.1.6<small> 2016-06-06 </small>
+</h1>
 <ul>
 <li>
 <code><a href="../reference/fisherp.html">fisherp()</a></code> uses Fisher’s method to combine p-values.</li>
 </ul>
 </div>
     <div id="tmisc-0-1-5" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tmisc-0-1-5" class="anchor"></a>Tmisc 0.1.5</h1>
+<h1 class="page-header">
+<a href="#tmisc-0-1-5" class="anchor"></a>Tmisc 0.1.5<small> 2016-02-03 </small>
+</h1>
 <ul>
 <li>
 <code><a href="../reference/dokuwiki.html">dokuwiki()</a></code> will convert a data.frame to a dokuwiki-formatted table, and will copy said table to the system clipboard if you’re on Mac OS X.</li>
 </ul>
 </div>
     <div id="tmisc-0-1-4" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tmisc-0-1-4" class="anchor"></a>Tmisc 0.1.4</h1>
+<h1 class="page-header">
+<a href="#tmisc-0-1-4" class="anchor"></a>Tmisc 0.1.4<small> 2016-01-25 </small>
+</h1>
 <ul>
 <li>
 <code><a href="../reference/strSort.html">strSort()</a></code> alphabetically sorts characters in a string.</li>
@@ -291,7 +309,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
@@ -299,3 +317,4 @@
 
   </body>
 </html>
+
