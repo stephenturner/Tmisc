@@ -1,9 +1,8 @@
 ---
 title: |
-    | First Line of a Multi-Line Title:
-    | Second Line
+    | First Line of a Multi-Line Title
 author: |
-    | Stephen Turner^[<user@domain.com>]
+    | Stephen Turner^[<___@___.com>]
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 abstract: "Lorem ipsum dolor sit amet, semper suscipit sea at. Dico scriptorem nec at, ex qui virtute dolores oportere. Duis tantas ponderum ut has. Est saepe mandamus salutatus et, id sed semper detracto moderatius, ei sit aperiam voluptua. Per esse justo fierent eu, duo quando tempor ut. At elitr doming possim vim, ut dolorem appetere nec."
 output: 
