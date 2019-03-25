@@ -1,3 +1,8 @@
+# Tmisc 0.1.20
+
+- Deprecated several functions in favor of tidyverse alternatives.
+- Modified PDF template.
+
 # Tmisc 0.1.19 
 
 This is primarily a cleanup release. Several functions were included in the Tmisc package early on while packages such as [janitor](https://CRAN.R-project.org/package=janitor) were in development. This release removes (note, _removes_, doesn't deprecate) functions that were previously copied from other packages, introducing a few potentially breaking changes.
