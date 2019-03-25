@@ -10,7 +10,9 @@
 #' @return A data.frame rounded to n significant digits.
 #' 
 #' @examples
+#' \dontrun{
 #' dfsigfig(mtcars,1)
+#' }
 #' 
 #' @export
 dfsigfig <- function(df, n=3) {

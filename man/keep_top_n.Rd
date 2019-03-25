@@ -20,10 +20,12 @@ A data frame conaining only rows belonging to the top n groups of the column
 Extract rows belonging to top n groups of a certain column
 }
 \examples{
+\dontrun{
 # All the cars
 (nrow(mtcars))
 # Only those in the top 2 groups based on the # carbs
 nrow(keep_top_n(mtcars, ~carb, n=2))
+}
 }
 \author{
 Jeroen Janssens

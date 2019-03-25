@@ -13,10 +13,12 @@
 #' @return A data frame conaining only rows belonging to the top n groups of the column
 #'
 #' @examples
+#' \dontrun{
 #' # All the cars
 #' (nrow(mtcars))
 #' # Only those in the top 2 groups based on the # carbs
 #' nrow(keep_top_n(mtcars, ~carb, n=2))
+#' }
 #' @export
 keep_top_n <- function(.data, col, n = 10) {
     .Deprecated("top_n()")

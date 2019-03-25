@@ -18,7 +18,9 @@ A data.frame rounded to n significant digits.
 Round the numeric columns of a data frame to a specified number of significant digits.
 }
 \examples{
+\dontrun{
 dfsigfig(mtcars,1)
+}
 
 }
 \author{
