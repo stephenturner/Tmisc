@@ -1,30 +1,30 @@
 ---
 title: |
     | First Line of a Multi-Line Title:
-    | And this is the Second Line
+    | Second Line
 author: |
-    | First Author^[<first@example.com>]
-    | Second Author^[<second@example.com>]
+    | Stephen Turner^[<user@domain.com>]
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 abstract: "Lorem ipsum dolor sit amet, semper suscipit sea at. Dico scriptorem nec at, ex qui virtute dolores oportere. Duis tantas ponderum ut has. Est saepe mandamus salutatus et, id sed semper detracto moderatius, ei sit aperiam voluptua. Per esse justo fierent eu, duo quando tempor ut. At elitr doming possim vim, ut dolorem appetere nec."
 output: 
   pdf_document: 
     fig_caption: yes
     toc: yes
+    # toc_depth: 3
     # latex_engine: xelatex
 # mainfont: Helvetica
 # fontsize: 11pt
 # geometry: margin=1in
 # bibliography: bibliography.bib
 header-includes:
-# - \renewcommand{\abstractname}{Executive Summary} # Changes the name of the abstract section.
+- \renewcommand{\abstractname}{Executive Summary} # Changes the name of the abstract section.
 # - \usepackage[dvipsnames]{xcolor}                 # Allows using dvips color names
 # - \usepackage[final]{pdfpages}                    # Allows inserting PDFs as additional pages
 # - \usepackage{eso-pic,graphicx,transparent}       # Required to insert draft watermark
 # - \usepackage{lscape}                             # rotates just images/sections
-# - \usepackage{pdflscape}                          # rotates whole page
-# - \newcommand{\blandscape}{\begin{landscape}}
-# - \newcommand{\elandscape}{\end{landscape}}
+- \usepackage{pdflscape}                          # rotates whole page
+- \newcommand{\blandscape}{\begin{landscape}}
+- \newcommand{\elandscape}{\end{landscape}}
 ---
 
 <!-- UNCOMMENT TO ADD A WATERMARK. ENSURE APPROPRIATE PACKAGES ARE INCLUDED IN YAML/LATEX HEADER -->
@@ -39,32 +39,18 @@ header-includes:
 ```{r setup, include=FALSE}
 library(knitr)
 library(tidyverse)
-opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE)
-# setwd(file.path(rprojroot::find_rstudio_root_file(), ""))
+theme_set(theme_bw())
+opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
 ```
 
-\newpage
 
 
-# First major section
+```{r, echo=FALSE}
+knitr::knit_exit()
+```
 
-Lorem ipsum dolor sit amet, semper suscipit sea at. Dico scriptorem nec at, ex qui virtute dolores oportere. Duis tantas ponderum ut has. Est saepe mandamus salutatus et, id sed semper detracto moderatius, ei sit aperiam voluptua. Per esse justo fierent eu, duo quando tempor ut. At elitr doming possim vim, ut dolorem appetere nec.
 
-## First minor section
-
-Lorem ipsum dolor sit amet, semper suscipit sea at. Dico scriptorem nec at, ex qui virtute dolores oportere. Duis tantas ponderum ut has. Est saepe mandamus salutatus et, id sed semper detracto moderatius, ei sit aperiam voluptua. Per esse justo fierent eu, duo quando tempor ut. At elitr doming possim vim, ut dolorem appetere nec.
-
-# Second major section
-
-Lorem ipsum dolor sit amet, semper suscipit sea at. Dico scriptorem nec at, ex qui virtute dolores oportere. Duis tantas ponderum ut has. Est saepe mandamus salutatus et, id sed semper detracto moderatius, ei sit aperiam voluptua. Per esse justo fierent eu, duo quando tempor ut. At elitr doming possim vim, ut dolorem appetere nec.
-
-## Second minor section
-
-Lorem ipsum dolor sit amet, semper suscipit sea at. Dico scriptorem nec at, ex qui virtute dolores oportere. Duis tantas ponderum ut has. Est saepe mandamus salutatus et, id sed semper detracto moderatius, ei sit aperiam voluptua. Per esse justo fierent eu, duo quando tempor ut. At elitr doming possim vim, ut dolorem appetere nec.
-
-## Functionality demonstration
-
-See Rmd source. Uncomment and adjust YAML header as necessary to see these.
+<!-- See Rmd source. Uncomment and adjust YAML header as necessary to see these. -->
 
 <!-- \color{OliveGreen} -->
 <!-- Some green text. Must uncomment `usepackage[dvipsnames]{xcolor}` in YAML header. -->
