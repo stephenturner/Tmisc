@@ -15,7 +15,7 @@ Imports:
     rstudioapi
 License: GPL-3
 LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
 Suggests: 
     ggplot2,
     reshape2

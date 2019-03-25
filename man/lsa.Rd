@@ -4,8 +4,8 @@
 \alias{lsa}
 \title{Improved list of objects}
 \usage{
-lsa(pos = 1, pattern, order.by = "Size", decreasing = TRUE, head = TRUE,
-  n = 10)
+lsa(pos = 1, pattern, order.by = "Size", decreasing = TRUE,
+  head = TRUE, n = 10)
 }
 \arguments{
 \item{pos}{numeric. Position in the stack.}
