@@ -19,5 +19,6 @@
 #' nrow(keep_top_n(mtcars, ~carb, n=2))
 #' @export
 keep_top_n <- function(.data, col, n = 10) {
+    .Deprecated("top_n()")
     semi_join(.data, head(count_(.data, col, sort = TRUE), n))
 }

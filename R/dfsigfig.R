@@ -14,6 +14,7 @@
 #' 
 #' @export
 dfsigfig <- function(df, n=3) {
+    .Deprecated("mutate_if(is.numeric, signif, n)")
     df[ ,sapply(df, is.numeric)] <- signif(df[ ,sapply(df, is.numeric)], n)
     df
 }

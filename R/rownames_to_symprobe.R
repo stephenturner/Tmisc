@@ -22,6 +22,7 @@
 #'   
 #' @export
 rownames_to_symprobe <- function (exprset, tt) {
+    .Deprecated()
     if(class(tt)!="data.frame") stop("tt isn't a data frame")
     if(class(exprset)!="matrix") stop("exprset isn't a matrix")
     if(nrow(tt)!=nrow(exprset)) stop("nrow(tt) != nrow(exprset)")

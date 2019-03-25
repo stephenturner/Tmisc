@@ -19,6 +19,7 @@
 #' @export
 
 unfactor <- function(df) {
+    .Deprecated("mutate_if(is.factor, as.character)")
     # Find the factors
     id <- sapply(df, is.factor)
     # Convert to characters
