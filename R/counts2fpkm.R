@@ -25,7 +25,7 @@
 #' @export
 counts2fpkm <- function(x, length, log=FALSE, prior.count=.25) {
     # sanity checks
-    if (class(x)!="matrix") stop("x must be a matrix")
+    if (!is(x, "matrix")) stop("x must be a matrix")
     if (nrow(x)!=length(length)) stop("dimensions of count matrix and gene lengths don't match")
     # library size is sum of reads in each sample
     lib.size <- colSums(x)

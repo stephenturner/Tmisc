@@ -24,7 +24,7 @@
 rownames_to_symprobe <- function (exprset, tt) {
     .Deprecated()
     if(class(tt)!="data.frame") stop("tt isn't a data frame")
-    if(class(exprset)!="matrix") stop("exprset isn't a matrix")
+    if(!is(exprset, "matrix")) stop("exprset isn't a matrix")
     if(nrow(tt)!=nrow(exprset)) stop("nrow(tt) != nrow(exprset)")
     tt_index <- sapply(rownames(exprset), function(pattern) grep(pattern, tt$ID))
     newrownames <- paste(tt$Symbol[tt_index], tt$ID[tt_index], sep="_")

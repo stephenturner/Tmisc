@@ -1,6 +1,6 @@
-# Tmisc 0.1.20
+# Tmisc 0.1.22
 
-- Bugfix for R 4.0.0 compatibility
+- Bugfixes for R 4.0.0 compatibility.
 
 # Tmisc 0.1.20
 

@@ -19,7 +19,7 @@
 #'   
 #' @export
 mat2df <- function(M) {
-    if (class(M)!="matrix") stop("M must be a square matrix. (M is not a matrix).")
+    if (!is(M, "matrix")) stop("M must be a square matrix. (M is not a matrix).")
     if (nrow(M)!=ncol(M))   stop("M must be a square matrix. (M is not square).")
     if (is.null(colnames(M))) colnames(M) <- 1:ncol(M)
     if (is.null(rownames(M))) rownames(M) <- 1:ncol(M)
