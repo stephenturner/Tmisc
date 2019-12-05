@@ -1,6 +1,6 @@
 Package: Tmisc
 Title: Turner Miscellaneous
-Version: 0.1.20
+Version: 0.1.21
 Authors@R: person("Stephen", "Turner", email = "vustephen@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-9140-9028"))
 Maintainer: Stephen Turner <vustephen@gmail.com>
 Description: Miscellaneous utility functions for data manipulation,
@@ -12,10 +12,11 @@ Imports:
     dplyr,
     tibble,
     utils, 
-    rstudioapi
+    rstudioapi,
+    methods
 License: GPL-3
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
 Suggests: 
     ggplot2,
     reshape2

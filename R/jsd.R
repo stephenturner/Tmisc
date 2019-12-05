@@ -12,6 +12,7 @@
 #' @return A Jensen-Shannon divergence-based distance matrix.
 #' 
 #' @importFrom stats as.dist
+#' @importFrom methods is
 #' 
 #' @examples
 #' set.seed(42)
@@ -29,7 +30,7 @@
 jsd <- function(M, pseudocount=1e-6, normalizeCounts=FALSE) {
     helpmsg <- "M must be a matrix of probabilities between 0 and 1, or if normalizeCounts=TRUE, a matrix of counts >=0."
     if (normalizeCounts) {
-        if (class(M)!="matrix" | any(M<0)) stop(helpmsg)
+        if (!is(M, "matrix") | any(M<0)) stop(helpmsg)
         if (all(M<1)) warning("Are you sure you meant to normalize this? Counts look small...")
         if (typeof(M)!="integer") warning("Are you sure you are trying to normalize a count matrix? It isn't integer...")
         M <- apply(M, 2, function(x) x/sum(x))
