@@ -16,13 +16,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
 
-<!-- sticky kit -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
+<!-- headroom.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -44,6 +46,7 @@
 <![endif]-->
 
 
+
   </head>
 
   <body>
@@ -60,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">Tmisc</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.20</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.21</span>
       </span>
     </div>
 
@@ -68,7 +71,7 @@
       <ul class="nav navbar-nav">
         <li>
   <a href="../index.html">
-    <span class="fa fa-home fa-lg"></span>
+    <span class="fas fa fas fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -83,7 +86,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/stephenturner/Tmisc">
-    <span class="fa fa-github fa-lg"></span>
+    <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -94,6 +97,7 @@
 </div><!--/.navbar -->
 
       
+
       </header>
 
 <div class="row">
@@ -103,51 +107,59 @@
       <small>Source: <a href='https://github.com/stephenturner/Tmisc/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
-    <div id="tmisc-0120" class="section level1">
+    <div id="tmisc-0-1-20" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-0120" class="anchor"></a>Tmisc 0.1.20<small> Unreleased </small>
+<a href="#tmisc-0-1-20" class="anchor"></a>Tmisc 0.1.20<small> 2019-03-25 </small>
+</h1>
+<ul>
+<li>Bugfix for R 4.0.0 compatibility</li>
+</ul>
+</div>
+    <div id="tmisc-0-1-20-1" class="section level1">
+<h1 class="page-header">
+<a href="#tmisc-0-1-20-1" class="anchor"></a>Tmisc 0.1.20<small> 2019-03-25 </small>
 </h1>
 <ul>
 <li>Deprecated several functions in favor of tidyverse alternatives.</li>
 <li>Modified PDF template.</li>
 </ul>
 </div>
-    <div id="tmisc-0119" class="section level1">
+    <div id="tmisc-0-1-19" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-0119" class="anchor"></a>Tmisc 0.1.19<small> 2018-03-20 </small>
+<a href="#tmisc-0-1-19" class="anchor"></a>Tmisc 0.1.19<small> 2018-03-20 </small>
 </h1>
 <p>This is primarily a cleanup release. Several functions were included in the Tmisc package early on while packages such as <a href="https://CRAN.R-project.org/package=janitor">janitor</a> were in development. This release removes (note, <em>removes</em>, doesn’t deprecate) functions that were previously copied from other packages, introducing a few potentially breaking changes.</p>
 <ul>
 <li>Removed <code>set_names()</code> as this is exported from rlang.</li>
 <li>Removed <code>beep()</code>. Use the <strong><a href="https://CRAN.R-project.org/package=beepr">beepr</a></strong> package instead.</li>
 <li>Removed <code>remove_empty_cols()</code>, <code>remove_empty_rows()</code>, <code>convert_to_NA()</code> and <code>clean_names()</code>. Use <code>remove_empty()</code>, etc., from the <strong><a href="https://CRAN.R-project.org/package=janitor">janitor</a></strong> package instead.</li>
-<li>Removed <code>unrowname()</code>. Use <code><a href="https://www.rdocumentation.org/packages/magrittr/topics/aliases">magrittr::set_rownames()</a></code> (loaded with tidyverse).</li>
+<li>Removed <code>unrowname()</code>. Use <code><a href="https://rdrr.io/pkg/magrittr/man/aliases.html">magrittr::set_rownames()</a></code> (loaded with tidyverse).</li>
 </ul>
 </div>
-    <div id="tmisc-0118" class="section level1">
+    <div id="tmisc-0-1-18" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-0118" class="anchor"></a>Tmisc 0.1.18<small> Unreleased </small>
+<a href="#tmisc-0-1-18" class="anchor"></a>Tmisc 0.1.18<small> Unreleased </small>
 </h1>
 <ul>
 <li>Added an RMarkdown template.</li>
 </ul>
 </div>
-    <div id="tmisc-0117" class="section level1">
+    <div id="tmisc-0-1-17" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-0117" class="anchor"></a>Tmisc 0.1.17<small> 2017-06-01 </small>
+<a href="#tmisc-0-1-17" class="anchor"></a>Tmisc 0.1.17<small> 2017-06-01 </small>
 </h1>
 <ul>
-<li>Add in to insert <code>=</code>. Optionally map the keyboard shortcut to Alt+<code>-</code> to insert <code>=</code> instead of the traditional <code>&lt;-</code>.</li>
+<li>Add in to insert <code>=</code>. Optionally map the keyboard shortcut to Alt+<code><a href="https://rdrr.io/r/base/Arithmetic.html">-</a></code> to insert <code>=</code> instead of the traditional <code>&lt;-</code>.</li>
 </ul>
 </div>
-    <div id="tmisc-0116" class="section level1">
+    <div id="tmisc-0-1-16" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-0116" class="anchor"></a>Tmisc 0.1.16<small> 2017-05-23 </small>
+<a href="#tmisc-0-1-16" class="anchor"></a>Tmisc 0.1.16<small> 2017-05-23 </small>
 </h1>
 <ul>
-<li>New functions <code>%like%</code> and <code>%nlike%</code> work like <code>%in%</code> and <code>%nin%</code>, but where the second argument is a regular expression to match.</li>
+<li>New functions <code><a href="../reference/grapes-like-grapes.html">%like%</a></code> and <code><a href="../reference/grapes-nlike-grapes.html">%nlike%</a></code> work like <code><a href="https://rdrr.io/r/base/match.html">%in%</a></code> and <code><a href="../reference/grapes-nin-grapes.html">%nin%</a></code>, but where the second argument is a regular expression to match.</li>
 <li>New function <code><a href="../reference/gt2refalt.html">gt2refalt()</a></code> creates a two-letter genotype from a GT field from a VCF file.</li>
-<li>Installs an RStudio add-in to insert <code>%in%</code>.</li>
+<li>Installs an RStudio add-in to insert <code><a href="https://rdrr.io/r/base/match.html">%in%</a></code>.</li>
 <li>Added aliases for low-level manipulation in a dplyr pipeline:
 <ul>
 <li><code><a href="../reference/aliases.html">brackets()</a></code></li>
@@ -170,17 +182,17 @@
 </li>
 </ul>
 </div>
-    <div id="tmisc-0115" class="section level1">
+    <div id="tmisc-0-1-15" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-0115" class="anchor"></a>Tmisc 0.1.15<small> 2017-05-16 </small>
+<a href="#tmisc-0-1-15" class="anchor"></a>Tmisc 0.1.15<small> 2017-05-16 </small>
 </h1>
 <ul>
 <li>New function <code><a href="../reference/mat2df.html">mat2df()</a></code> creates a pairwise distance data frame from a square matrix.</li>
 </ul>
 </div>
-    <div id="tmisc-0114" class="section level1">
+    <div id="tmisc-0-1-14" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-0114" class="anchor"></a>Tmisc 0.1.14<small> 2017-05-08 </small>
+<a href="#tmisc-0-1-14" class="anchor"></a>Tmisc 0.1.14<small> 2017-05-08 </small>
 </h1>
 <ul>
 <li>
@@ -189,29 +201,29 @@
 <code><a href="../reference/deseqresult2tbl.html">deseqresult2tbl()</a></code> now lets you name the column extracted from the DESeq result’s <code>rownames</code> anything you want.</li>
 <li>Added the <a href="https://www.autodeskresearch.com/publications/samestats">Datasaurus Dozen</a> built-in dataset (<code>datasaurus</code>).</li>
 <li>Small updates to enable documentation with <a href="https://github.com/hadley/pkgdown">pkgdown</a>.</li>
-<li>Inconsequential update to <code>%nin%</code>.</li>
+<li>Inconsequential update to <code><a href="../reference/grapes-nin-grapes.html">%nin%</a></code>.</li>
 </ul>
 </div>
-    <div id="tmisc-0113" class="section level1">
+    <div id="tmisc-0-1-13" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-0113" class="anchor"></a>Tmisc 0.1.13<small> 2017-03-15 </small>
+<a href="#tmisc-0-1-13" class="anchor"></a>Tmisc 0.1.13<small> 2017-03-15 </small>
 </h1>
 <ul>
 <li>
 <code><a href="../reference/Cs.html">Cs()</a></code> (from <a href="https://cran.r-project.org/package=Hmisc">Hmisc</a>): Convenience function to create a quoted character vector from unquoted strings.</li>
 </ul>
 </div>
-    <div id="tmisc-0112" class="section level1">
+    <div id="tmisc-0-1-12" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-0112" class="anchor"></a>Tmisc 0.1.12<small> 2017-01-22 </small>
+<a href="#tmisc-0-1-12" class="anchor"></a>Tmisc 0.1.12<small> 2017-01-22 </small>
 </h1>
 <ul>
 <li>Minor bugfixes</li>
 </ul>
 </div>
-    <div id="tmisc-0111" class="section level1">
+    <div id="tmisc-0-1-11" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-0111" class="anchor"></a>Tmisc 0.1.11<small> Unreleased </small>
+<a href="#tmisc-0-1-11" class="anchor"></a>Tmisc 0.1.11<small> Unreleased </small>
 </h1>
 <ul>
 <li>
@@ -222,13 +234,13 @@
 <code>remove_empty_rows()</code> and <code>remove_empty_cols()</code> removes any rows or columns composed entirely of <code>NA</code> values (taken from <a href="https://cran.r-project.org/package=janitor">sfirke/janitor</a>).</li>
 </ul>
 </div>
-    <div id="tmisc-0110" class="section level1">
+    <div id="tmisc-0-1-10" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-0110" class="anchor"></a>Tmisc 0.1.10<small> 2016-09-14 </small>
+<a href="#tmisc-0-1-10" class="anchor"></a>Tmisc 0.1.10<small> 2016-09-14 </small>
 </h1>
 <ul>
 <li>
-<code><a href="../reference/Tpairs.html">Tpairs()</a></code> displays better pairwise scatterplot matrices than <code><a href="https://www.rdocumentation.org/packages/graphics/topics/pairs">pairs()</a></code>.</li>
+<code><a href="../reference/Tpairs.html">Tpairs()</a></code> displays better pairwise scatterplot matrices than <code><a href="https://rdrr.io/r/graphics/pairs.html">pairs()</a></code>.</li>
 <li>
 <code><a href="../reference/Thist.html">Thist()</a></code> plots a histogram with either a normal distribution or density plot overlay.</li>
 <li>
@@ -237,17 +249,17 @@
 <code>beep()</code> plays a short beep to alert when something’s done (from the beepr package).</li>
 </ul>
 </div>
-    <div id="tmisc-019" class="section level1">
+    <div id="tmisc-0-1-9" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-019" class="anchor"></a>Tmisc 0.1.9<small> 2016-09-01 </small>
+<a href="#tmisc-0-1-9" class="anchor"></a>Tmisc 0.1.9<small> 2016-09-01 </small>
 </h1>
 <ul>
 <li>Minor bugfixes.</li>
 </ul>
 </div>
-    <div id="tmisc-018" class="section level1">
+    <div id="tmisc-0-1-8" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-018" class="anchor"></a>Tmisc 0.1.8<small> 2016-07-22 </small>
+<a href="#tmisc-0-1-8" class="anchor"></a>Tmisc 0.1.8<small> 2016-07-22 </small>
 </h1>
 <ul>
 <li>
@@ -260,36 +272,36 @@
 <code><a href="../reference/are_all_equal.html">are_all_equal()</a></code> assess whether all the components of a numeric vector are (approximately) equal.</li>
 </ul>
 </div>
-    <div id="tmisc-017" class="section level1">
+    <div id="tmisc-0-1-7" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-017" class="anchor"></a>Tmisc 0.1.7<small> 2016-06-15 </small>
+<a href="#tmisc-0-1-7" class="anchor"></a>Tmisc 0.1.7<small> 2016-06-15 </small>
 </h1>
 <ul>
 <li>
 <code><a href="../reference/gghues.html">gghues()</a></code> generates color palette emulating ggplot2’s default hues.</li>
 </ul>
 </div>
-    <div id="tmisc-016" class="section level1">
+    <div id="tmisc-0-1-6" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-016" class="anchor"></a>Tmisc 0.1.6<small> 2016-06-06 </small>
+<a href="#tmisc-0-1-6" class="anchor"></a>Tmisc 0.1.6<small> 2016-06-06 </small>
 </h1>
 <ul>
 <li>
 <code><a href="../reference/fisherp.html">fisherp()</a></code> uses Fisher’s method to combine p-values.</li>
 </ul>
 </div>
-    <div id="tmisc-015" class="section level1">
+    <div id="tmisc-0-1-5" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-015" class="anchor"></a>Tmisc 0.1.5<small> 2016-02-03 </small>
+<a href="#tmisc-0-1-5" class="anchor"></a>Tmisc 0.1.5<small> 2016-02-03 </small>
 </h1>
 <ul>
 <li>
 <code><a href="../reference/dokuwiki.html">dokuwiki()</a></code> will convert a data.frame to a dokuwiki-formatted table, and will copy said table to the system clipboard if you’re on Mac OS X.</li>
 </ul>
 </div>
-    <div id="tmisc-014" class="section level1">
+    <div id="tmisc-0-1-4" class="section level1">
 <h1 class="page-header">
-<a href="#tmisc-014" class="anchor"></a>Tmisc 0.1.4<small> 2016-01-25 </small>
+<a href="#tmisc-0-1-4" class="anchor"></a>Tmisc 0.1.4<small> 2016-01-25 </small>
 </h1>
 <ul>
 <li>
@@ -302,28 +314,30 @@
     <div id="tocnav">
       <h2>Contents</h2>
       <ul class="nav nav-pills nav-stacked">
-        <li><a href="#tmisc-0120">0.1.20</a></li>
-        <li><a href="#tmisc-0119">0.1.19</a></li>
-        <li><a href="#tmisc-0118">0.1.18</a></li>
-        <li><a href="#tmisc-0117">0.1.17</a></li>
-        <li><a href="#tmisc-0116">0.1.16</a></li>
-        <li><a href="#tmisc-0115">0.1.15</a></li>
-        <li><a href="#tmisc-0114">0.1.14</a></li>
-        <li><a href="#tmisc-0113">0.1.13</a></li>
-        <li><a href="#tmisc-0112">0.1.12</a></li>
-        <li><a href="#tmisc-0111">0.1.11</a></li>
-        <li><a href="#tmisc-0110">0.1.10</a></li>
-        <li><a href="#tmisc-019">0.1.9</a></li>
-        <li><a href="#tmisc-018">0.1.8</a></li>
-        <li><a href="#tmisc-017">0.1.7</a></li>
-        <li><a href="#tmisc-016">0.1.6</a></li>
-        <li><a href="#tmisc-015">0.1.5</a></li>
-        <li><a href="#tmisc-014">0.1.4</a></li>
+        <li><a href="#tmisc-0-1-20">0.1.20</a></li>
+        <li><a href="#tmisc-0-1-20-1">0.1.20</a></li>
+        <li><a href="#tmisc-0-1-19">0.1.19</a></li>
+        <li><a href="#tmisc-0-1-18">0.1.18</a></li>
+        <li><a href="#tmisc-0-1-17">0.1.17</a></li>
+        <li><a href="#tmisc-0-1-16">0.1.16</a></li>
+        <li><a href="#tmisc-0-1-15">0.1.15</a></li>
+        <li><a href="#tmisc-0-1-14">0.1.14</a></li>
+        <li><a href="#tmisc-0-1-13">0.1.13</a></li>
+        <li><a href="#tmisc-0-1-12">0.1.12</a></li>
+        <li><a href="#tmisc-0-1-11">0.1.11</a></li>
+        <li><a href="#tmisc-0-1-10">0.1.10</a></li>
+        <li><a href="#tmisc-0-1-9">0.1.9</a></li>
+        <li><a href="#tmisc-0-1-8">0.1.8</a></li>
+        <li><a href="#tmisc-0-1-7">0.1.7</a></li>
+        <li><a href="#tmisc-0-1-6">0.1.6</a></li>
+        <li><a href="#tmisc-0-1-5">0.1.5</a></li>
+        <li><a href="#tmisc-0-1-4">0.1.4</a></li>
       </ul>
     </div>
   </div>
 
 </div>
+
 
       <footer>
       <div class="copyright">
@@ -331,13 +345,16 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
 </div>
+
       </footer>
    </div>
 
   
 
+
   </body>
 </html>
+
 
