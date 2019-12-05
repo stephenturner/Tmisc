@@ -35,7 +35,7 @@ jsd <- function(M, pseudocount=1e-6, normalizeCounts=FALSE) {
         if (typeof(M)!="integer") warning("Are you sure you are trying to normalize a count matrix? It isn't integer...")
         M <- apply(M, 2, function(x) x/sum(x))
     }
-    if (class(M)!="matrix"| any(M<0) | any(M>1) ) stop(helpmsg)
+    if (!is(M, "matrix") | any(M<0) | any(M>1) ) stop(helpmsg)
     # prevent div/0 and logarithm errors
     M[M==0] <- pseudocount
     # Kullback-Leibler divergence between two vectors
