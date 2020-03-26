@@ -1,3 +1,35 @@
+#' Tidy DESeq2 result
+#' 
+#' Returns a tidy version of a DESeq2 results table.
+#' 
+#' @param deseqresult Results from running \code{results(dds)} on a DESeqDataSet object.
+#' @param colname The name of the column you want to use for what DESeq puts in the row name.
+#'   
+#' @return a tidy version of the DESeq2 results.
+#' 
+#' @import dplyr
+#' @importFrom tibble as_tibble rownames_to_column
+#' 
+#' @examples
+#' \dontrun{
+#' res <- results(dds)
+#' res <- deseqresult2tbl
+#' }
+#'   
+#' @export
+deseqresult2tbl <- function(deseqresult, colname="ensgene") {
+    .Deprecated("results(..., tidy=TRUE)")
+    gene <- baseMean <- padj <- pvalue <- stat <- NULL #gets rid of the note on pkg check
+    if (class(deseqresult) != "DESeqResults") stop("Not a DESeqResults object.")
+    deseqresult <- as.data.frame(deseqresult)
+    deseqresult %>% 
+        as.data.frame() %>% 
+        tibble::rownames_to_column(var=colname) %>% 
+        tibble::as_tibble() %>% 
+        dplyr::arrange(padj, pvalue, desc(stat), desc(baseMean))
+}
+
+
 #' Fragments per kilobase per million
 #' 
 #' Takes a count matrix and a vector of gene lengths and returns an optionally \code{log2}-transformed FPKM matrix. Modified from edgeR.
