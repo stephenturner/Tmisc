@@ -17,4 +17,3 @@ nn <- function(df) data.frame(var=names(df),
                               index=1:ncol(df), 
                               class=sapply(df, class), 
                               row.names=NULL)
-nn(iris)
