@@ -24,7 +24,3 @@ barplot(rep(1,n), col=gghues(n), names=gghues(n))
 barplot(rep(1,n), col=gghues(n, start=15+180), names=gghues(n, start=15+180))
 
 }
-\author{
-Stephen Turner
-}
-\keyword{keywords}

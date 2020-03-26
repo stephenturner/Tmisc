@@ -11,9 +11,11 @@ Depends:
 Imports:
     dplyr,
     tibble,
-    utils, 
+    utils,
     rstudioapi,
-    methods
+    methods,
+    magrittr,
+    stats
 License: GPL-3
 LazyData: true
 RoxygenNote: 7.0.2

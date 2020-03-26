@@ -2,12 +2,8 @@
 #' 
 #' Turns a distance matrix into a data frame of pairwise distances.
 #' 
-#' @author Stephen Turner
-#'   
 #' @param M a square pairwise matrix (e.g., of distances).
-#'   
 #' @return Data frame with pairwise distances.
-#' 
 #' @examples
 #' set.seed(42)
 #' M <- matrix(rnorm(25), nrow=5)
@@ -19,7 +15,7 @@
 #'   
 #' @export
 mat2df <- function(M) {
-    if (!is(M, "matrix")) stop("M must be a square matrix. (M is not a matrix).")
+    if (!methods::is(M, "matrix")) stop("M must be a square matrix. (M is not a matrix).")
     if (nrow(M)!=ncol(M))   stop("M must be a square matrix. (M is not square).")
     if (is.null(colnames(M))) colnames(M) <- 1:ncol(M)
     if (is.null(rownames(M))) rownames(M) <- 1:ncol(M)

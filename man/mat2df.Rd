@@ -25,6 +25,3 @@ M
 mat2df(M)
   
 }
-\author{
-Stephen Turner
-}
