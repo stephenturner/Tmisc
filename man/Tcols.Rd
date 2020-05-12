@@ -4,7 +4,9 @@
 \name{Tcols}
 \alias{Tcols}
 \title{A palette of 17 diverging colors}
-\format{Vector of 17 diverging colors.}
+\format{
+Vector of 17 diverging colors.
+}
 \source{
 R Color brewer: \code{c(brewer.pal(9, "Set1"), brewer.pal(8, "Dark2"))}.
 }
