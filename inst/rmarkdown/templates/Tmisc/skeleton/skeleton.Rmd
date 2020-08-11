@@ -30,22 +30,22 @@ header-includes:
 - \newcommand{\elandscape}{\end{landscape}}
 ### Custom headers and footers. See https://bookdown.org/yihui/rmarkdown-cookbook/latex-header.html and https://ctan.org/pkg/fancyhdr
 ### Load hancyhdr pkg and use the style
-# - \usepackage{fancyhdr}
-# - \pagestyle{fancy}
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
 ### Put headers on the first page
-# - \fancypagestyle{plain}{\pagestyle{fancy}}
+- \fancypagestyle{plain}{\pagestyle{fancy}}
 ### This fixes the pesky warnings in log files that linger
-# - \setlength{\headheight}{19pt}
+- \setlength{\headheight}{19pt}
 ### TEXT centered in header, nothing on left and right
-# - \fancyhead[C]{\footnotesize HEADER TEXT HERE\\}
-# - \fancyhead[L]{}
-# - \fancyhead[R]{}
+- \fancyhead[C]{\footnotesize HEADER TEXT HERE\\}
+- \fancyhead[L]{}
+- \fancyhead[R]{}
 ### TEXT centered in footer, nothing on left, page number on right
-# - \fancyfoot[C]{\footnotesize FOOTER TEXT HERE}
-# - \fancyfoot[L]{}
-# - \fancyfoot[R]{\thepage}
+- \fancyfoot[C]{\footnotesize FOOTER TEXT HERE}
+- \fancyfoot[L]{}
+- \fancyfoot[R]{\thepage}
 ### Make the header rule zero width (invisible)
-# - \renewcommand{\headrulewidth}{0pt}
+- \renewcommand{\headrulewidth}{0pt}
 ---
 
 <!-- UNCOMMENT TO ADD A WATERMARK. ENSURE APPROPRIATE PACKAGES ARE INCLUDED IN YAML/LATEX HEADER -->
