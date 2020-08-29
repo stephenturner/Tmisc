@@ -9,5 +9,4 @@
 #' \dontrun{
 #'  barplot(rep(1, 17), col=Tcols, axes=F, names=c(rep("Set1", 9), rep("Dark2", 8)), horiz=TRUE, las=2)
 #' }
-
 "Tcols"

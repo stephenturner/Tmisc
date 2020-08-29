@@ -1,3 +1,11 @@
+# Tmisc 1.0.0
+
+- Bugfixes for R devel checks.
+- Move orphan functions to utils.
+- Deprecated many long superseded functions.
+- Deprecated some no longer useful gene expression functions.
+- New PDF template.
+
 # Tmisc 0.1.22
 
 - Bugfixes for R 4.0.0 compatibility.

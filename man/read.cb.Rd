@@ -24,7 +24,3 @@ read.cb(header=TRUE, sep=',')
 }
 
 }
-\author{
-Stephen Turner
-}
-\keyword{keywords}

@@ -4,7 +4,9 @@
 \name{quartet}
 \alias{quartet}
 \title{Anscombe's Quartet data (tidy)}
-\format{Data frame with columns.}
+\format{
+Data frame with columns.
+}
 \source{
 Anscombe's Quartet, 
   \url{http://en.wikipedia.org/wiki/Anscombe\%27s_quartet}

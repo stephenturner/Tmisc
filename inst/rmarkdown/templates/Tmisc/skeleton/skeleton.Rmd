@@ -1,8 +1,10 @@
 ---
 title: |
     | First Line of a Multi-Line Title
+    | Second Line of a Multi-Line Title
 author: |
     | Stephen Turner^[<___@___.com>]
+    | Second Author^[<___@___.com>]
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 abstract: "Lorem ipsum dolor sit amet, semper suscipit sea at. Dico scriptorem nec at, ex qui virtute dolores oportere. Duis tantas ponderum ut has. Est saepe mandamus salutatus et, id sed semper detracto moderatius, ei sit aperiam voluptua. Per esse justo fierent eu, duo quando tempor ut. At elitr doming possim vim, ut dolorem appetere nec."
 output: 
@@ -10,20 +12,40 @@ output:
     fig_caption: yes
     toc: yes
     # toc_depth: 3
+    # number_sections: yes
     # latex_engine: xelatex
 # mainfont: Helvetica
 # fontsize: 11pt
 # geometry: margin=1in
 # bibliography: bibliography.bib
 header-includes:
-- \renewcommand{\abstractname}{Executive Summary} # Changes the name of the abstract section.
+- \usepackage{float}                                # Required to float images here
+- \renewcommand{\abstractname}{Executive Summary}   # Changes the name of the abstract section.
 # - \usepackage[dvipsnames]{xcolor}                 # Allows using dvips color names
 # - \usepackage[final]{pdfpages}                    # Allows inserting PDFs as additional pages
 # - \usepackage{eso-pic,graphicx,transparent}       # Required to insert draft watermark
 # - \usepackage{lscape}                             # rotates just images/sections
-- \usepackage{pdflscape}                          # rotates whole page
+- \usepackage{pdflscape}                            # rotates whole page
 - \newcommand{\blandscape}{\begin{landscape}}
 - \newcommand{\elandscape}{\end{landscape}}
+### Custom headers and footers. See https://bookdown.org/yihui/rmarkdown-cookbook/latex-header.html and https://ctan.org/pkg/fancyhdr
+### Load hancyhdr pkg and use the style
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
+### Put headers on the first page
+- \fancypagestyle{plain}{\pagestyle{fancy}}
+### This fixes the pesky warnings in log files that linger
+- \setlength{\headheight}{19pt}
+### TEXT centered in header, nothing on left and right
+- \fancyhead[C]{\footnotesize HEADER TEXT HERE\\}
+- \fancyhead[L]{}
+- \fancyhead[R]{}
+### TEXT centered in footer, nothing on left, page number on right
+- \fancyfoot[C]{\footnotesize FOOTER TEXT HERE}
+- \fancyfoot[L]{}
+- \fancyfoot[R]{\thepage}
+### Make the header rule zero width (invisible)
+- \renewcommand{\headrulewidth}{0pt}
 ---
 
 <!-- UNCOMMENT TO ADD A WATERMARK. ENSURE APPROPRIATE PACKAGES ARE INCLUDED IN YAML/LATEX HEADER -->
@@ -39,14 +61,51 @@ header-includes:
 library(knitr)
 library(tidyverse)
 theme_set(theme_bw())
-opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE, fig.align="center")
+# opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE, fig.align="center", fig.pos="H")
 ```
 
+\newpage
 
+# Background
+
+Lorem ipsum.
+
+## Prior work
+
+Lorem ipsum.^[First footnote, inline]
+
+## Objective
+
+Lorem ipsum.[^footnote2]
+
+[^footnote2]: Second footnote, reference with a keyword.
+
+# Procedure
+
+Lorem ipsum.[^foot3]\textsuperscript{,}[^foot4]
+
+[^foot3]: See the the source to see how to get two footnotes with a superscript comma outside math mode.
+[^foot4]: Ibid.
+
+# Results
+
+Lorem ipsum.
+
+# Discussion
+
+Lorem ipsum.
 
 ```{r, echo=FALSE}
 knitr::knit_exit()
 ```
+
+
+```{r, out.height="6in", fig.align='center', fig.cap="This is the caption.", eval=FALSE, include=FALSE}
+knitr::include_graphics("/path/image.png")
+```
+
+
 
 
 <!-- See Rmd source. Uncomment and adjust YAML header as necessary to see these. -->
