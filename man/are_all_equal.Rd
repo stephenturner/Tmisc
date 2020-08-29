@@ -27,7 +27,3 @@ identical(5, 5.000000001)
 are_all_equal(c(5L, 5, 5.000000001))
 
 }
-\author{
-Stephen Turner
-}
-\keyword{keywords}
