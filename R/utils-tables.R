@@ -87,13 +87,13 @@ ellipses <- function(df, n=5L) {
         matrix(nrow=1, dimnames=list(NULL, names(df))) %>% 
         data.frame(stringsAsFactors=FALSE) %>% 
         tibble::as_tibble()
-    df %>% 
+    out <- df %>% 
         head(n) %>% 
         lapply(as.character) %>% 
         data.frame(stringsAsFactors=FALSE) %>% 
         tibble::as_tibble() %>% 
-        dplyr::bind_rows(els) %>% 
-        return
+        dplyr::bind_rows(els)
+    return(out)
 }
 
 #' Get names and class of all columns in a data frame
