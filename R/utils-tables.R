@@ -78,7 +78,9 @@ corner <- function(x, n=5) {
 #' @return A data frame truncated by a row of ellipses.
 #' 
 #' @examples
+#' \dontrun{
 #' ellipses(mtcars, 5)
+#' }
 #' 
 #' @export
 ellipses <- function(df, n=5L) {
