@@ -7,5 +7,4 @@
 #' @source Anscombe's Quartet, 
 #'   \url{http://en.wikipedia.org/wiki/Anscombe\%27s_quartet}
 #' @format Data frame with columns.
-
 "quartet"
