@@ -2,9 +2,6 @@
 #' 
 #' Are all the elements of a numeric vector (approximately) equal?
 #' 
-#' @author Stephen Turner
-#' @keywords keywords
-#'   
 #' @param x A numeric vector.
 #' @param na.rm Remove missing values (FALSE by default; NAs in x will return NA).
 #' 
