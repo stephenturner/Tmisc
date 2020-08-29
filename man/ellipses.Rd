@@ -18,6 +18,8 @@ A data frame truncated by a row of ellipses.
 Prints the specified number of rows of a data frame, followed by a row of ellipses. Useful for piping to \code{knitr::kable()} for printing a truncated table in a markdown document.
 }
 \examples{
+\dontrun{
 ellipses(mtcars, 5)
+}
 
 }
