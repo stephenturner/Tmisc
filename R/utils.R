@@ -55,7 +55,7 @@ lowestnonzero <- function(x) {
 
 #' Improved list of objects
 #' 
-#' Improved list of objects.  Sorts by size by default. Adapted from \url{http://stackoverflow.com/q/1358003/654296}.
+#' Improved list of objects.  Sorts by size by default. Adapted from \url{https://stackoverflow.com/q/1358003/654296}.
 #' 
 #' @author Dirk Eddelbuettel, Tony Breyal
 #' @keywords NA

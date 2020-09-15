@@ -32,7 +32,7 @@ A data.frame with type, size in bytes, human-readable size, rows, and
   columns of every object in the environment.
 }
 \description{
-Improved list of objects.  Sorts by size by default. Adapted from \url{http://stackoverflow.com/q/1358003/654296}.
+Improved list of objects.  Sorts by size by default. Adapted from \url{https://stackoverflow.com/q/1358003/654296}.
 }
 \examples{
 \dontrun{

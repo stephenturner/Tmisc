@@ -14,7 +14,7 @@ saveit(..., file = stop("'file' must be specified"))
 \item{file}{Filename/path where data will be saved.}
 }
 \description{
-Allows you to rename objects as you save them. See \url{http://stackoverflow.com/a/21248218/654296}.
+Allows you to rename objects as you save them. See \url{https://stackoverflow.com/a/21248218/654296}.
 
 Allows you to rename objects as you save them. See \url{http://stackoverflow.com/a/21248218/654296}.
 }

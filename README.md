@@ -17,4 +17,4 @@ install.packages("devtools")
 devtools::install_github("stephenturner/Tmisc")
 ```
 
-Documentation: <http://stephenturner.github.io/Tmisc>
+Documentation: <http://stephenturner.github.io/Tmisc/>
