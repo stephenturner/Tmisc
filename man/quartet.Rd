@@ -3,7 +3,7 @@
 \docType{data}
 \name{quartet}
 \alias{quartet}
-\title{Anscombes Quartet data (tidy)}
+\title{Anscombe's Quartet data (tidy)}
 \format{
 Data frame with columns.
 }
@@ -11,6 +11,8 @@ Data frame with columns.
 quartet
 }
 \description{
-
+Tidy version of built-in Anscombe's Quartet data. Four datasets that have 
+nearly identical linear regression properties, yet appear very different when
+graphed.
 }
 \keyword{datasets}
