@@ -121,7 +121,7 @@ o <- function() {
         message(getwd())
         system("open .")
     } else {
-        warning("This only works on Mac.\nKnow how to use Windows? Submit a PR at:\nhttps://github.com/stephenturner/Tmisc")
+        warning("This only works on Mac.\nKnow how to use Windows? Submit a PR at:\nhttps://github.com/stephenturner/Tmisc/.")
     }
 }
 
@@ -194,7 +194,7 @@ strSort <- function(x) {
 
 #' Rename objects while saving.
 #' 
-#' Allows you to rename objects as you save them. See \url{http://stackoverflow.com/a/21248218/654296}.
+#' Allows you to rename objects as you save them. See \url{https://stackoverflow.com/a/21248218/654296}.
 #'   
 #' @param ... Objects to save.
 #' @param file Filename/path where data will be saved.

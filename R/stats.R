@@ -1,7 +1,7 @@
 #' Jensen-Shannon divergence
 #' 
 #' Calculates a distance matrix from a matrix of probability distributions using
-#' Jensen-Shannon divergence. Adapted from \url{http://enterotype.embl.de/enterotypes.html#dm}.
+#' Jensen-Shannon divergence. Adapted from \url{https://enterotype.embl.de/enterotypes.html#dm}.
 #' 
 #' @param M a probability distribution matrix, e.g., normalized transcript compatibility counts.
 #' @param pseudocount a small number to avoid division by zero errors.
