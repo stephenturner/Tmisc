@@ -10,11 +10,11 @@ Install from [CRAN](https://cran.r-project.org/package=Tmisc):
 install.packages("Tmisc")
 ```
 
-Install from [GitHub](https://github.com/stephenturner/Tmisc) (potentially unstable):
+Install from [GitHub](https://github.com/stephenturner/Tmisc/) (potentially unstable):
 
 ```r
 install.packages("devtools")
 devtools::install_github("stephenturner/Tmisc")
 ```
 
-Documentation: <http://stephenturner.github.io/Tmisc/>
+Documentation: <https://stephenturner.github.io/Tmisc/>

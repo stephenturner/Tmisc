@@ -5,7 +5,7 @@ Authors@R: person("Stephen", "Turner", email = "vustephen@gmail.com", role = c("
 Maintainer: Stephen Turner <vustephen@gmail.com>
 Description: Miscellaneous utility functions for data manipulation,
     data tidying, and working with gene expression data.
-URL: https://github.com/stephenturner/Tmisc, http://stephenturner.github.io/Tmisc
+URL: https://github.com/stephenturner/Tmisc, https://stephenturner.github.io/Tmisc/
 Depends:
     R (>= 3.1.2)
 Imports:
