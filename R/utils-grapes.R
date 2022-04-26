@@ -51,3 +51,17 @@
 `%nlike%` <- function(x, pattern) {
     !(x %like% pattern)
 }
+
+#' @title  String concatenation
+#' @description Infix operator for [paste0].
+#' @param x a string
+#' @param y a string
+#' @return A concatenated string
+#' @examples
+#' paste0("Hello, ", "this package name is ", "Tmisc")
+#' "Hello, " %+% "this package name is " %+% "Tmisc!"
+#' cat("This is the number " %+% seq(1,10) %+% "\n")
+#' @export
+`%+%` <- function(x, y) {
+    paste0(x, y)
+}
