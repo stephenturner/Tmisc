@@ -46,6 +46,18 @@ header-includes:
 - \fancyfoot[R]{\thepage}
 ### Make the header rule zero width (invisible)
 - \renewcommand{\headrulewidth}{0pt}
+### Wrap long lines of code
+- |
+  ```{=latex}
+  \usepackage{fvextra}
+  \DefineVerbatimEnvironment{Highlighting}{Verbatim}{
+    breaksymbolleft={}, 
+    showspaces = false,
+    showtabs = false,
+    breaklines,
+    commandchars=\\\{\}
+  }
+  ```
 ---
 
 <!-- UNCOMMENT TO ADD A WATERMARK. ENSURE APPROPRIATE PACKAGES ARE INCLUDED IN YAML/LATEX HEADER -->
