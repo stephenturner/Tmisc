@@ -1,6 +1,7 @@
 # Tmisc 1.0.1
 
 - Updated PDF template.
+- Remove deprecated gene expression functions.
 
 # Tmisc 1.0.0
 
