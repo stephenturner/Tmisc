@@ -1,3 +1,7 @@
+# Tmisc 1.0.1
+
+- Updated PDF template.
+
 # Tmisc 1.0.0
 
 - Bugfixes for R devel checks.
