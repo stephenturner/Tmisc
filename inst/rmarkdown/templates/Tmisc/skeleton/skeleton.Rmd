@@ -1,6 +1,6 @@
 ---
 title: |
-    | First Line of a Multi-Line Title
+    | \vspace{-1.0em}First Line of a Multi-Line Title
     | Second Line of a Multi-Line Title
 author: |
     | Stephen Turner^[<___@___.com>]
@@ -123,23 +123,23 @@ Lorem ipsum.
 
 ## Cross-referencing
 
-To reference Figure \@ref(fig:cars-plot), use `\@ref(fig:cars-plot)` if `cars-plot` is the name of the chunk.
+To reference Figure \ref{fig:cars-plot}, use `\ref{fig:cars-plot}` if `\\label{fig:cars-plot}` is in the figure caption.
 
-```{r cars-plot, fig.height=4, fig.width=5, fig.cap="The cars data."}
+```{r, fig.height=4, fig.width=5, fig.cap="The cars data. \\label{fig:cars-plot}"}
 plot(cars, pch=16)
 ```
 
-You can also reference equations, for instance the mean in Equation \@ref(eq:mean), using `\@ref(eq:mean)` in the text and `(\#eq:mean)` in the equation block.
+You can also reference equations, for instance the mean in Equation \ref{eq:mean}, using `\ref{eq:mean}` in the text and `\ref{eq:mean}` in the equation block, but you must use latex instead of `$$` fences.
 
-$$ 
-(\#eq:mean)
+\begin{equation}
+\label{eq:mean}
 \bar{X} = \frac{\sum_{i=1}^n X_i}{n}
-$$
+\end{equation}
 
-Reference tables like Table \@ref(tab:mtcars) using `\@ref(tab:mtcars)` if `mtcars` is the name of the chunk.
+Reference tables like Table \ref{tab:mtcars} using `\ref{tab:mtcars}` if `\\label{tab:mtcars}` is the table legend.
 
-```{r mtcars, echo=FALSE}
-knitr::kable(mtcars[1:5, 1:5], caption = "The mtcars data.")
+```{r, echo=FALSE}
+knitr::kable(mtcars[1:5, 1:5], caption = "The mtcars data. \\label{tab:mtcars}")
 ```
 
 ```{r, echo=FALSE}
@@ -152,9 +152,9 @@ knitr::include_graphics("/path/image.png")
 
 <!-- See Rmd source. Uncomment and adjust YAML header as necessary to see these. -->
 
-<!-- \color{OliveGreen} -->
+<!-- \color{red} -->
 
-<!-- Some green text. Must uncomment `usepackage[dvipsnames]{xcolor}` in YAML header. -->
+<!-- Some red text. Must uncomment `\PassOptionsToPackage{dvipsnames}{xcolor}` in YAML header. -->
 
 <!-- \color{black} -->
 
