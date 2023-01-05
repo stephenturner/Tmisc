@@ -83,29 +83,6 @@ gg_na <- function(df) {
 }
 
 
-#' Emulate ggplot2 default hues
-#' 
-#' This will emulate ggplot2's hues, which are equally spaced hues around the color wheel, starting from 15.
-#' 
-#' @param n The Numeric; number of hues to generate.
-#' @param start Numeric; the place on the color wheel to start. ggplot2 default is 15.
-#'   
-#' @return A vector of hues
-#' 
-#' @examples
-#' n <- 10
-#' gghues(3)
-#' barplot(rep(1,n), col=gghues(n), names=gghues(n))
-#' barplot(rep(1,n), col=gghues(n, start=15+180), names=gghues(n, start=15+180))
-#' 
-#' @export
-gghues <- function(n, start=15) {
-    hues = seq(start, 360+start, length = n + 1)
-    grDevices::hcl(h = hues, l = 65, c = 100)[1:n]
-}
-
-
-
 #' Histograms with overlays
 #' 
 #' Plot a histogram with either a normal distribution or density curve overlay.
