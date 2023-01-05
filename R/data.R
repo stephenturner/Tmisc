@@ -10,3 +10,12 @@
 #'  barplot(rep(1, 17), col=Tcols, axes=F, names=c(rep("Set1", 9), rep("Dark2", 8)), horiz=TRUE, las=2)
 #' }
 "Tcols"
+
+#' Anscombe's Quartet data (tidy)
+#' 
+#' Tidy version of built-in Anscombe's Quartet data. Four datasets that have 
+#' nearly identical linear regression properties, yet appear very different when
+#' graphed.
+#' 
+#' @format Data frame with columns.
+"quartet"

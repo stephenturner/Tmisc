@@ -1,3 +1,29 @@
+#' Read from the clipboard
+#' 
+#' Read tabular data from the clipboard.
+#' 
+#' @param header A logical value indicating whether the file contains the names of the variables as its first line. Overrides the default \code{header=FALSE} option in \code{read.table()}.
+#' @param ... Further arguments to be passed to \code{read.table}
+#' 
+#' @return A data.frame
+#' 
+#' @examples
+#' \dontrun{
+#' # To read CSV data with a header from the clipboard:
+#' read.cb(header=TRUE, sep=',')
+#' }
+#' 
+#' @export
+read.cb <- function(header=TRUE, ...) {
+    os <- Sys.info()[1]
+    if (os=="Darwin")       content <- read.table(pipe("pbpaste"),  header=header, ...)
+    else if (os=="Windows") content <- read.table(file="clipboard", header=header, ...)
+    else stop("Sorry, only works on Windows and Mac.")
+    content <- tibble::as_tibble(content)
+    return(content)
+}
+
+
 #' Are all equal? 
 #' 
 #' Are all the elements of a numeric vector (approximately) equal?
@@ -52,7 +78,6 @@ lowestnonzero <- function(x) {
 }
 
 
-
 #' Improved list of objects
 #' 
 #' Improved list of objects.  Sorts by size by default. Adapted from \url{https://stackoverflow.com/q/1358003/654296}.
@@ -105,7 +130,6 @@ lsa <- function (pos = 1, pattern, order.by = "Size",
 }
 
 
-
 #' Open the current working directory on mac
 #' 
 #' Opens the current working directory on mac.
@@ -126,7 +150,6 @@ o <- function() {
 }
 
 
-
 #' Peek at the top of a text file
 #' 
 #' This returns a character vector which shows the top n lines of a file.
@@ -144,7 +167,6 @@ o <- function() {
 #' }
 #' @export
 peek <- function(x,n=5) scan(x,what="char",n=n,sep="\n")
-
 
 
 #' Write sessionInfo to the clipboard
@@ -170,7 +192,6 @@ sicb <- function() {
 }
 
 
-
 #' Sort characters in a string
 #' 
 #' Alphabetically sorts characters in a string. Vectorized over x.
@@ -191,7 +212,6 @@ strSort <- function(x) {
 }
 
 
-
 #' Rename objects while saving.
 #' 
 #' Allows you to rename objects as you save them. See \url{https://stackoverflow.com/a/21248218/654296}.
@@ -210,7 +230,6 @@ saveit <- function(..., file=stop("'file' must be specified")) {
     x <- list(...)
     save(list=names(x), file=file, envir=list2env(x))
 }
-
 
 
 #' @title  Two-letter genotype from VCF GT
