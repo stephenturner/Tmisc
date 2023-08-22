@@ -1,3 +1,8 @@
+# Tmisc 1.0.1
+
+- Remove functions deprecated >2 years ago.
+- Fix package level documentation.
+
 # Tmisc 1.0.0
 
 - Bugfixes for R devel checks.

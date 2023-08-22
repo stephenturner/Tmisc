@@ -77,7 +77,7 @@ jsd <- function(M, pseudocount=1e-6, normalizeCounts=FALSE) {
 #' 
 #' @export
 lmp <- function (modelobject) {
-    if (class(modelobject) != "lm") stop("Not an object of class 'lm'.")
+    if (!inherits(modelobject, "lm")) stop("Not an object of class 'lm'.")
     f <- summary(modelobject)$fstatistic
     # f[1]=value, f[2]=numeratorDF, f[3]=denominatorDF
     p <- stats::pf(f[1],f[2],f[3],lower.tail=F)
