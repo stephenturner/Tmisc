@@ -1,3 +1,10 @@
+# Tmisc 1.1.0
+
+- Removed magrittr pipe (`%>%`) in favor of the base R pipe (`|>`), requiring R 4.2.0 at minimum.
+- Remove more deprecated functions.
+- Update documentation throughout.
+- Most functions now return a tibble rather than a raw data.frame.
+
 # Tmisc 1.0.1
 
 - Remove functions deprecated >2 years ago.

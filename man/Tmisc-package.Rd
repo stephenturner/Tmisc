@@ -6,13 +6,14 @@
 \alias{Tmisc-package}
 \title{Tmisc: Turner Miscellaneous}
 \description{
-Miscellaneous utility functions for data manipulation, data tidying, and working with gene expression data.
+Miscellaneous utility functions for data manipulation, data tidying, and working with gene expression data and biological sequence data.
 }
 \seealso{
 Useful links:
 \itemize{
   \item \url{https://github.com/stephenturner/Tmisc}
   \item \url{https://stephenturner.github.io/Tmisc/}
+  \item Report bugs at \url{https://github.com/stephenturner/Tmisc/issues}
 }
 
 }

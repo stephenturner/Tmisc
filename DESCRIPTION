@@ -2,23 +2,23 @@ Package: Tmisc
 Title: Turner Miscellaneous
 Version: 1.0.1
 Authors@R: person("Stephen", "Turner", email = "vustephen@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-9140-9028"))
-Maintainer: Stephen Turner <vustephen@gmail.com>
-Description: Miscellaneous utility functions for data manipulation,
-    data tidying, and working with gene expression data.
+Description: Miscellaneous utility functions for data manipulation, data tidying, and working with gene expression data and biological sequence data.
 URL: https://github.com/stephenturner/Tmisc, https://stephenturner.github.io/Tmisc/
-Depends:
-    R (>= 3.1.2)
+BugReports: https://github.com/stephenturner/Tmisc/issues
+Depends: 
+    R (>= 4.2.0)
 Imports:
     dplyr,
     tibble,
     utils,
     rstudioapi,
     methods,
-    magrittr,
     stats
 License: GPL-3
 LazyData: true
-RoxygenNote: 7.2.3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
 Suggests: 
     ggplot2,
     reshape2

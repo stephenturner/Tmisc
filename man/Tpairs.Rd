@@ -2,7 +2,7 @@
 % Please edit documentation in R/viz.R
 \name{Tpairs}
 \alias{Tpairs}
-\title{Better scatterplot matrices.}
+\title{Better scatterplot matrices}
 \usage{
 Tpairs(x, histogram = TRUE, gap = 0, ...)
 }
@@ -20,7 +20,6 @@ A matrix of scatter plots with rugged histograms, correlations, and significance
 }
 \examples{
 Tpairs(iris[-5])
-Tpairs(iris[-5], pch=21, bg=Tcols[factor(iris$Species)])
 Tpairs(iris[-5], pch=21, bg=gghues(3)[factor(iris$Species)], gap=1)
 
 }

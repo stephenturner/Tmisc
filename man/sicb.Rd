@@ -11,7 +11,6 @@ Writes output of \code{sessionInfo()} to the clipboard. Only works on Mac.
 }
 \examples{
 \dontrun{
-# Write sessionInfo() to the clipboard on mac.
 sicb()
 }
 

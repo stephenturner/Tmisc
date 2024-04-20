@@ -13,7 +13,7 @@ Thist(x, overlay = "normal", col = "gray80", ...)
 
 \item{col}{Color of the histogram bars.}
 
-\item{...}{Other arguments to be passed to \code{hist()}.}
+\item{...}{Other arguments to be passed to \code{\link[=hist]{hist()}}.}
 }
 \description{
 Plot a histogram with either a normal distribution or density curve overlay.

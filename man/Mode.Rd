@@ -2,7 +2,7 @@
 % Please edit documentation in R/stats.R
 \name{Mode}
 \alias{Mode}
-\title{Mode.}
+\title{Mode}
 \usage{
 Mode(x, na.rm = FALSE)
 }
@@ -14,7 +14,7 @@ default). NAs are counted just like any other element. That is, an NA in
 the vector won't necessarily result in a return NA. See the first example.}
 }
 \value{
-A combined p-value.
+The mode of the input vector.
 }
 \description{
 Returns the mode of a vector. First in a tie wins (see examples).

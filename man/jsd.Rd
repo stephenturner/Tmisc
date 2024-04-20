@@ -18,7 +18,7 @@ A Jensen-Shannon divergence-based distance matrix.
 }
 \description{
 Calculates a distance matrix from a matrix of probability distributions using
-Jensen-Shannon divergence. Adapted from \url{https://enterotype.embl.de/enterotypes.html#dm}.
+Jensen-Shannon divergence. Adapted from \url{https://enterotype.embl.de/}.
 }
 \examples{
 set.seed(42)
@@ -32,4 +32,7 @@ Mjsd <- jsd(M, normalizeCounts=TRUE)
 Mjsd
 plot(hclust(Mjsd))
   
+}
+\references{
+\url{https://web.archive.org/web/20240131141033/https://enterotype.embl.de/enterotypes.html#dm}.
 }

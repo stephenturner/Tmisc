@@ -3,10 +3,9 @@
 \name{addins}
 \alias{addins}
 \alias{insertInAddin}
-\alias{insertEqual}
 \title{Insert text at current position.}
 \description{
 Call these function as an addin to insert desired text at the
-  cursor position. After installing Tmisc, hit the Addins menu, and
-  optionally add a keyboard shortcut, e.g., Command+Shift+I, Alt+-, etc.
+cursor position. After installing Tmisc, hit the Addins menu, and
+optionally add a keyboard shortcut, e.g., Command+Shift+I, Alt+-, etc.
 }

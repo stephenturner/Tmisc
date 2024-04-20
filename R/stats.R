@@ -1,7 +1,9 @@
 #' Jensen-Shannon divergence
 #' 
 #' Calculates a distance matrix from a matrix of probability distributions using
-#' Jensen-Shannon divergence. Adapted from \url{https://enterotype.embl.de/enterotypes.html#dm}.
+#' Jensen-Shannon divergence. Adapted from <https://enterotype.embl.de/>.
+#' 
+#' @references <https://web.archive.org/web/20240131141033/https://enterotype.embl.de/enterotypes.html#dm>.
 #' 
 #' @param M a probability distribution matrix, e.g., normalized transcript compatibility counts.
 #' @param pseudocount a small number to avoid division by zero errors.
@@ -51,42 +53,7 @@ jsd <- function(M, pseudocount=1e-6, normalizeCounts=FALSE) {
 }
 
 
-#' Linear model p-value
-#' 
-#' Extract F-test p-value from a linear model object. Can also use \code{broom::glance(fit)}.
-#'
-#' @param modelobject A model object of class \code{lm}. 
-#' @return The p-value on the f-test of a linear model object testing the null hypothesis that R^2==0.
-#' 
-#' @examples
-#' # simulate some (e.g. SNP genotype) data
-#' set.seed(42)
-#' n=20
-#' d=data.frame(x1=rbinom(n,2,.5), x2=rbinom(n,2,.5))
-#' d=transform(d, y=x1+x2+rnorm(n))
-#' #fit the linear model
-#' fit=lm(y ~ x1 + x2, data=d)
-#' #shows that the F-test is 0.006641
-#' summary(fit)
-#' #can't access that p-value using this
-#' names(summary(fit)) 
-#' # this doesn't work either
-#' names(fit)
-#  # use the lmp() function:
-#' lmp(fit)
-#' 
-#' @export
-lmp <- function (modelobject) {
-    if (!inherits(modelobject, "lm")) stop("Not an object of class 'lm'.")
-    f <- summary(modelobject)$fstatistic
-    # f[1]=value, f[2]=numeratorDF, f[3]=denominatorDF
-    p <- stats::pf(f[1],f[2],f[3],lower.tail=F)
-    attributes(p) <- NULL
-    return(p)
-}
-
-
-#' Mode.
+#' Mode
 #' 
 #' Returns the mode of a vector. First in a tie wins (see examples).
 #' 
@@ -95,7 +62,8 @@ lmp <- function (modelobject) {
 #'   default). NAs are counted just like any other element. That is, an NA in
 #'   the vector won't necessarily result in a return NA. See the first example.
 #'   
-#' @return A combined p-value.
+#' @return The mode of the input vector.
+#' @export
 #'   
 #' @examples
 #' Mode(c(1,2,2,3,3,3, NA))
@@ -104,7 +72,6 @@ lmp <- function (modelobject) {
 #' Mode(c(1,2,2,3,3,3, NA, NA, NA, NA), na.rm=TRUE)
 #' Mode(c("A", "Z", "Z", "B", "B"))
 #' 
-#' @export
 Mode <- function(x, na.rm=FALSE) {
     if (!is.vector(x)) stop("x is not a vector.")
     if(na.rm) x <- x[!is.na(x)]
@@ -113,12 +80,16 @@ Mode <- function(x, na.rm=FALSE) {
 }
 
 
-#' Fisher's method to combine p-values.
+#' Fisher's method to combine p-values
 #' 
 #' Uses Fisher's method to combine p-values from different tests.
 #' 
 #' @param x A vector of p-values between 0 and 1.
-#' @return A combined p-value.
+#' 
+#' @references Fisher, R.A. (1925). Statistical Methods for Research Workers.
+#' @references <https://en.wikipedia.org/wiki/Fisher%27s_method>.
+#' 
+#' @return The combined p-value.
 #'   
 #' @examples
 #' fisherp(c(.042, .02, .001, 0.01, .89))
@@ -134,4 +105,58 @@ fisherp <- function(x) {
     df <- 2*length(x)
     fisherp <- stats::pchisq( -2*sum(log(x)), df, lower.tail=FALSE)
     return(fisherp)
+}
+
+
+#' Fragments per kilobase per million
+#' 
+#' Takes a count matrix and a vector of gene lengths and returns an optionally \code{log2}-transformed FPKM matrix. Modified from edgeR.
+#' 
+#' @param x a matrix of counts.
+#' @param length a vector of length \code{nrow(x)} giving length in bases.
+#' @param log logical, if \code{TRUE}, then \code{log2} values are returned.
+#' @param prior.count average count to be added to each observation to avoid 
+#'   taking log of zero. Used only if \code{log=TRUE}.
+#'   
+#' @return A matrix of FPKM values.
+#' @export
+#' 
+#' @examples
+#' set.seed(123)
+#' genecounts <- matrix(sample(c(rep(0, 50), 1:100), 30), nrow=10)
+#' lengths <- sample(1000:10000, 10)
+#' counts2fpkm(genecounts, lengths)
+#'   
+counts2fpkm <- function(x, length, log=FALSE, prior.count=.25) {
+    # sanity checks
+    if (!inherits(x, "matrix")) stop("x must be a matrix")
+    if (nrow(x)!=length(length)) stop("dimensions of count matrix and gene lengths don't match")
+    
+    # library size is sum of reads in each sample
+    lib.size <- colSums(x)
+    if (log) {
+        # If you're log scaling, you'll have to add something to the zeros, so
+        # adjust the library sizes accordingly. prior.count is the average count to
+        # be added to each observation to avoid taking log of zero.
+        prior.count.scaled <- lib.size/mean(lib.size) * prior.count
+        lib.size <- lib.size + 2 * prior.count.scaled
+    }
+    
+    # Per million
+    lib.size <- 1e-06 * lib.size
+    if (log) {
+        cpm <- log2(t((t(x) + prior.count.scaled)/lib.size))
+    } else {
+        cpm <- t(t(x)/lib.size)
+    }
+    
+    # per kilobase
+    length.kb <- length/1000
+    if (log) {
+        fpkm <- cpm-log2(length.kb)
+    } else {
+        fpkm <- cpm/length.kb
+    }
+    
+    return(fpkm)
 }

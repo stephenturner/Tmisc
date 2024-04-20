@@ -4,5 +4,5 @@
 #' nearly identical linear regression properties, yet appear very different when
 #' graphed.
 #' 
-#' @format Data frame with columns.
+#' @format Data frame with three columns, set, x, y.
 "quartet"

@@ -17,9 +17,9 @@ gt2refalt(gt, ref, alt)
 Returnvalue
 }
 \description{
-Get a two-letter genotype from a VCF GT field. Current
-  implementation is quick and dirty, and only accepts 0/0, 0/1, or 1/1. Any
-  other input to gt will return a missing value.
+Get a two-letter genotype from a VCF GT field. Current implementation is
+quick and dirty, and only accepts 0/0, 0/1, or 1/1. Any other input to gt
+will return a missing value.
 }
 \examples{
 gt2refalt(gt="0/0", ref="R", alt="A")
@@ -27,4 +27,5 @@ gt2refalt(gt="0/1", ref="R", alt="A")
 gt2refalt(gt="1/1", ref="R", alt="A")
 gt2refalt(gt="0/2", ref="R", alt="A")
 gt2refalt(gt="./.", ref="R", alt="A")
+
 }

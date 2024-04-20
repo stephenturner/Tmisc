@@ -11,15 +11,18 @@ peek(x, n = 5)
 
 \item{n}{the number of lines to return}
 }
+\value{
+A character vector of the first n lines of the file.
+}
 \description{
 This returns a character vector which shows the top n lines of a file.
 }
 \examples{
 \dontrun{
 filename <- tempfile()
-x<-matrix(round(rnorm(10^4),2),1000,10)
-colnames(x)=letters[1:10]
-write.csv(x,file=filename,row.names=FALSE)
+x <- matrix(round(rnorm(10^4), 2), 1000, 10)
+colnames(x) <- letters[1:10]
+write.table(x, file = filename, row.names = FALSE, quote = FALSE)
 peek(filename)
 }
 }

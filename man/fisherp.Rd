@@ -2,7 +2,7 @@
 % Please edit documentation in R/stats.R
 \name{fisherp}
 \alias{fisherp}
-\title{Fisher's method to combine p-values.}
+\title{Fisher's method to combine p-values}
 \usage{
 fisherp(x)
 }
@@ -10,7 +10,7 @@ fisherp(x)
 \item{x}{A vector of p-values between 0 and 1.}
 }
 \value{
-A combined p-value.
+The combined p-value.
 }
 \description{
 Uses Fisher's method to combine p-values from different tests.
@@ -18,4 +18,9 @@ Uses Fisher's method to combine p-values from different tests.
 \examples{
 fisherp(c(.042, .02, .001, 0.01, .89))
 
+}
+\references{
+Fisher, R.A. (1925). Statistical Methods for Research Workers.
+
+\url{https://en.wikipedia.org/wiki/Fisher\%27s_method}.
 }

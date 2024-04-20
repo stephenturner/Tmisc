@@ -7,7 +7,7 @@
 o()
 }
 \description{
-Opens the current working directory on mac.
+Open the current working directory on mac
 }
 \examples{
 \dontrun{

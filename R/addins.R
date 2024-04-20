@@ -10,9 +10,3 @@
 insertInAddin <- function() {
     rstudioapi::insertText(" %in% ")
 }
-#' @rdname addins
-#' @usage NULL
-#' @export
-insertEqual <- function() {
-    rstudioapi::insertText(" = ")
-}

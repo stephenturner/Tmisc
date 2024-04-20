@@ -9,7 +9,7 @@ lsa(
   pattern,
   order.by = "Size",
   decreasing = TRUE,
-  head = TRUE,
+  head = FALSE,
   n = 10
 )
 }
@@ -18,8 +18,7 @@ lsa(
 
 \item{pattern}{Regex to filter the objects by.}
 
-\item{order.by}{character. Either 'Type', 'Size', 'PrettySize', 'Rows', or 
-'Columns'. This will dictate how the output is ordered.}
+\item{order.by}{character. Either 'Type', 'Size', 'PrettySize', 'Rows', or 'Columns'. This will dictate how the output is ordered.}
 
 \item{decreasing}{logical. Should the output be displayed in decreasing order?}
 
@@ -29,20 +28,14 @@ lsa(
 }
 \value{
 A data.frame with type, size in bytes, human-readable size, rows, and
-  columns of every object in the environment.
+columns of every object in the environment.
 }
 \description{
 Improved list of objects.  Sorts by size by default. Adapted from \url{https://stackoverflow.com/q/1358003/654296}.
 }
 \examples{
-\dontrun{
 a <- rnorm(100000)
 b <- matrix(1, 1000, 100)
 lsa()
-}
   
 }
-\author{
-Dirk Eddelbuettel, Tony Breyal
-}
-\keyword{NA}
