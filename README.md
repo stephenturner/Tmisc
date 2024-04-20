@@ -1,6 +1,9 @@
 # Tmisc
 
+<!-- badges: start -->
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/Tmisc)](https://cran.r-project.org/package=Tmisc)
+[![R-CMD-check](https://github.com/stephenturner/Tmisc/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/stephenturner/Tmisc/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
 
 Miscellaneous utility functions for manipulating data and your R environment.
 
