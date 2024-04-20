@@ -1,10 +1,13 @@
 ## Test environments
 
-- Local MacOS, R 4.2.3
-- `rhub::check_for_cran()`:
-    - Ubuntu Linux 20.04.1 LTS, R-release, GCC
-    - Fedora Linux, R-devel, clang, gfortran
-    - Windows Server 2022, R-devel, 64 bit
+- Local MacOS, R 4.3.2
+- Win builder
+- RHub
+    - Ubuntu Linux, R-release
+    - MacOS, R-release
+    - MacOS arm64, R-release
+    - Windows, R-release
+    - Fedora Linux, R-devel
 
 ## R CMD check results
 
